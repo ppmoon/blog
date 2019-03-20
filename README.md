@@ -1,0 +1,1 @@
+# This just blog architecture
