@@ -2,7 +2,7 @@
 title: "学习如何使用mysql的手册"
 date: 2019-03-20T19:44:01+08:00
 draft: false
-categories: ["mysql"]
+tags: ["mysql"]
 ---
 
 mysql不同的版本会有不同的语法特性，如何才能知道当前版本的语法是什么样子的呢？最好的办法就是查看mysql的帮助手册。
