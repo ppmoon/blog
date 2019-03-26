@@ -141,7 +141,7 @@ Slim    Benny   snake   m       1996-04-29      \N
 然后我们进入mysql,使用*LOAD DATA*语法载入pet.txt的数据
 
 ```
-
+LOAD DATA LOCAL INFILE '/home/ppmoon/pet.txt' INTO TABLE pet;
 ```
 
-
+我们先简单解析下命令语法，*LOAD DATA*表示载入数据，载入什么地方的数据？LOCAL表示载入当前客户端所在的电脑的数据。因为你的mysql服务端很有可能是在远程服务器上的。如果在语句当中去掉LOCAL，载入数据的位置就是mysql服务端所在的电脑上的位置。
