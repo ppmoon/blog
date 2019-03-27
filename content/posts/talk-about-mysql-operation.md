@@ -124,6 +124,8 @@ mysql> show tables;
 
 有两个命令可以用来在表中创建数据*LOAD DATA*和*INSERT*
 
+## LOAD DATA命令导入数据
+
 LOAD DATA可以把文件当中的数据导入到表格当中。
 
 首先我们创建一个文件pet.txt
@@ -144,4 +146,82 @@ Slim    Benny   snake   m       1996-04-29      \N
 LOAD DATA LOCAL INFILE '/home/ppmoon/pet.txt' INTO TABLE pet;
 ```
 
-我们先简单解析下命令语法，*LOAD DATA*表示载入数据，载入什么地方的数据？LOCAL表示载入当前客户端所在的电脑的数据。因为你的mysql服务端很有可能是在远程服务器上的。如果在语句当中去掉LOCAL，载入数据的位置就是mysql服务端所在的电脑上的位置。
+我们先简单解析下命令语法，*LOAD DATA*表示载入数据，载入什么地方的数据？LOCAL表示载入当前客户端所在的电脑的数据。因为你的mysql服务端很有可能是在远程服务器上的。如果在语句当中去掉LOCAL，载入数据的位置就是mysql服务端所在的电脑上的位置。*INFILE*指的是导入文件，还有一个命令是*OUTFILE*是导出数据。*INFILE*命令后面就是文件存放的路径了，这部分路径是linux系统的文件路径。如果是Windows假设你的文件在d盘可以写成*d:\pet.txt*最后*INTO*表明数据导入的方向*TABLE*表示数据插入到表中，不是别的地方，表的名字是什么？是pet。
+
+## INSERT命令插入数据
+
+除了LOAD DATA之外我们还可以使用*INSERT*命令插入数据。语法格式为：
+```
+INSERT INTO 表明 VALUES ('字段1','字段2'……);
+```
+
+如果我们想向pet表当中插入一条新数据，我们可以这样写：
+```
+INSERT INTO pet VALUES ('Puffball','Diane','hamster','f','1999-03-30',NULL);
+```
+VALUES当中的字段顺序和表当中的字段顺序一一对应即可，如果没有数据可以使用NULL占位。至此你一定发现了，mysql的命令几乎就是和英文直译是一样的，稍加理解参照手册就可以学会。
+
+# 如何从表中检索数据？
+
+使用*SELECT*命令来查看数据，语法格式为*SELECT 字段名 FROM 表名*，select英文直译挑选的意思，选择后面加上需要挑选的字段，也就是表格的列，如果要挑选出所有就使用*来表示。最后通过 from 命令来表明挑选那个表格当中的数据。
+
+```
+mysql> select * from pet;
++--------+--------+---------+------+------------+------------+
+| name   | owner  | species | sex  | birth      | death      |
++--------+--------+---------+------+------------+------------+
+| Fluffy | Harold | cat     | f    | 1993-02-04 | NULL       |
+| Claws  | Gwen   | cat     | m    | 1994-03-17 | NULL       |
+| Buffy  | Harold | dog     | f    | 1989-05-13 | NULL       |
+| Fang   | Benny  | dog     | m    | 1990-08-27 | NULL       |
+| Bowser | Diane  | dog     | NULL | 1979-08-31 | 1995-07-29 |
+| Chirpy | Gwen   | bird    | f    | 1998-09-11 | NULL       |
+| Slim   | Benny  | snake   | m    | 1996-04-29 | NULL       |
++--------+--------+---------+------+------------+------------+
+7 rows in set (0.00 sec)
+```
+
+# 如何操作多个表？
+
+是的，我们的数据不可能只存储在一个表当中，很多时候，数据是分散在不同的表格当中的，这时候我们需要一些关联表格进行查询的命令。
+
+我们需要再创建一个表event用来记录一些宠物相关的备忘记录，pet表和event表通过name字段进行关联：
+```
+CREATE TABLE event (name VARCHAR(20), date DATE, type VARCHAR(15), remark VARCHAR(255));
+```
+
+使用*LOAD DATA*导入数据
+文件event.txt
+```
+Fluffy  1995-05-15      litter  4 kittens, 3 female, 1 male
+Buffy   1993-06-23      litter  5 puppies, 2 female, 3 male
+Buffy   1994-06-19      litter  3 puppies, 3 female
+Chirpy  1999-03-21      vet     needed beak straightened
+Slim    1997-08-03      vet     broken rib
+Bowser  1991-10-12      kennel  \N
+Fang    1991-10-12      kennel  \N
+Fang    1998-08-28      birthday Gave him a new chew toy
+Claws   1998-03-17      birthday Gave him a new flea collar
+```
+命令：
+```
+LOAD DATA LOCAL INFILE '/home/ppmoon/event.txt' INTO TABLE event;
+```
+
+这里我们需要用到一个新命令*JOIN*这个命令用来将两个表关联起来。如果我们通过两个表的数据查询出宠物的备注信息我们可以这样写：
+
+```
+mysql> SELECT pet.name,remark FROM pet JOIN event ON pet.name = event.name WHERE event.type = 'litter';
++--------+-----------------------------+
+| name   | remark                      |
++--------+-----------------------------+
+| Fluffy | 4 kittens, 3 female, 1 male |
+| Buffy  | 5 puppies, 2 female, 3 male |
+| Buffy  | 3 puppies, 3 female         |
++--------+-----------------------------+
+```
+
+命令解析：
+1.多个表有重复名称字段的时候，可以使用 表名.字段名的方式来明确字段，比如pet.name指的就是pet表当中的name
+2.JOIN语句后面加表明ON用来声明两个表通过什么字段进行关联
+3.WHERE命令用来筛选条件。
