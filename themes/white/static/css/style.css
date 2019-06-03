@@ -1,3 +1,9 @@
-code {
-    background: #696966;
+pre {
+    background-color: beige;
+    padding: 8px;
+}
+pre code {
+    font-size: 87.5%;
+    color: #e83e8c;
+    word-break: break-word;
 }
