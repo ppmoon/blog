@@ -2,7 +2,7 @@
 # If you want to see the full configuration, please check `full-config.toml` .
 # And see https://gohugo.io/getting-started/configuration/ .
 
-baseURL = "http://localhost:1313/"
+baseURL = "https://ppmoon.github.io/"
 title = "PPmoon's Blog"
 enableRobotsTXT = true
 enableEmoji = true
@@ -75,5 +75,5 @@ defaultContentLanguage = "zh-cn"           # Default language to use
   customJS = []             # if ['custom.js'], load '/static/js/custom.js' file
 
   [params.social]                                         # 社交链接
-    a-email = "mailto:your@email.com"
-    g-github = "http://localhost:1313"
+    a-email = "mailto:cnliuyunpeng@gmail.com"
+    g-github = "https://github.com/ppmoon"
