@@ -60,7 +60,6 @@ mysql> show databases;
 +----------+
 ```
 
-
 *show*这个命令就如同字面翻译一样，显示，显示什么？ 显示databases，显示数据库，在后面我们会多次使用show这个命令。命令当中的数据库这个英文单词是复数形式，意味着显示很多数据库。（如果输入单数形式的database会显示错误，因为就没有这条命令，这里的提示只是为了方便记忆和理解）最后像其他大部分语言一样，命令语句结束以后要加一个分号用以表示命令输入完了。
 如果你输入的命令有误Mysql会提示如下错误：
 ```
@@ -129,7 +128,7 @@ mysql> show tables;
 LOAD DATA可以把文件当中的数据导入到表格当中。
 
 首先我们创建一个文件pet.txt
-```
+````
 Fluffy  Harold  cat     f       1993-02-04      \N
 Claws   Gwen    cat     m       1994-03-17      \N
 Buffy   Harold  dog     f       1989-05-13      \N
@@ -137,7 +136,7 @@ Fang    Benny   dog     m       1990-08-27      \N
 Bowser  Diane   dog     \N      1979-08-31      1995-07-29
 Chirpy  Gwen    bird    f       1998-09-11      \N
 Slim    Benny   snake   m       1996-04-29      \N
-```
+````
 其中按照空格区分数据字段的，*\N*表示的null，如果这个字段没有数据可以用null表示。
 
 然后我们进入mysql,使用*LOAD DATA*语法载入pet.txt的数据
