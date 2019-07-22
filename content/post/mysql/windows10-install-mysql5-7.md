@@ -1,6 +1,6 @@
 ---
 title: "windows10安装mysql5.7"
-date: 2006-01-27T17:30:54+08:00
+date: 2016-01-27T17:30:54+08:00
 draft: false
 tags: ["mysql"]
 ---
