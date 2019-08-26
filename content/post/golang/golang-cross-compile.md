@@ -39,10 +39,10 @@ GOOS=linux GOARCH=amd64 go build hello.go
 -   GOOS：目标操作系统
 -   GOARCH：目标操作系统的架构
 
-| OS | ARCH | OS version | 
-| - | :-: | -: | 
-| linux | 386 / amd64 / arm | >= Linux 2.6 | 
-| darwin | 386 / amd64 | OS X (Snow Leopard + Lion) | 
+| OS | ARCH | OS version |
+| ---- | ---- | ---- |
+| linux | 386 / amd64 / arm | >= Linux 2.6 |
+| darwin | 386 / amd64 | OS X (Snow Leopard + Lion) |
 | freebsd | 386 / amd64 | >= FreeBSD 7 |
 | windows | 386 / amd64 | >= Windows 2000 |
 
