@@ -19,7 +19,7 @@
           <ul class="submenu">
             {{ range .Children }}
               <li>
-                <a href="{{ .URL | absLangURL | safeURL }}">{{ .Name }}</a>
+                <a href="{{ .URL | absLangURL | safeURL }}" target="_blank">{{ .Name }}</a>
               </li>
             {{ end }}
           </ul>
