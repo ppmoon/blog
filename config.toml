@@ -54,7 +54,7 @@ defaultContentLanguage = "zh-cn"           # Default language to use
   identifier = "apps"
 [[menu.main]]
   name = "书法字帖"
-  weight = 40
+  weight = 41
   parent = "apps"
   identifier = "calligraphy"
   url = "/calligraphy/"
