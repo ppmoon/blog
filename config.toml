@@ -48,6 +48,17 @@ defaultContentLanguage = "zh-cn"           # Default language to use
   weight = 30
   identifier = "tags"
   url = "/tags/"
+[[menu.main]]
+  name = "Apps"
+  weight = 40
+  identifier = "apps"
+[[menu.main]]
+  name = "书法字帖"
+  weight = 40
+  parent = "apps"
+  identifier = "calligraphy"
+  url = "/calligraphy/"
+  
 
 
 [params]
