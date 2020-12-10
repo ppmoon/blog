@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PPmoon&#39;s Blog</title>
+    <link>https://ppmoon.github.io/</link>
+    <description>Recent content on PPmoon&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 11 Mar 2020 21:16:01 +0800</lastBuildDate>
+    
+        <atom:link href="https://ppmoon.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About</title>
+      <link>https://ppmoon.github.io/about/</link>
+      <pubDate>Fri, 19 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ppmoon.github.io/about/</guid>
+      
+        <description>&lt;p&gt;这是PPmoon的Blog&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>Posts</title>
+      <link>https://ppmoon.github.io/post/</link>
+      <pubDate>Wed, 11 Mar 2020 21:16:01 +0800</pubDate>
+      
+      <guid>https://ppmoon.github.io/post/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>
