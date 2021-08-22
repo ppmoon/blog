@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>PPmoon&#39;s Blog</title>
-    <link>https://ppmoon.github.io/</link>
-    <description>Recent content on PPmoon&#39;s Blog</description>
+    <title>Posts on PPmoon&#39;s Blog</title>
+    <link>https://ppmoon.github.io/posts/</link>
+    <description>Recent content in Posts on PPmoon&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 11 Mar 2020 21:16:01 +0800</lastBuildDate><atom:link href="https://ppmoon.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 11 Mar 2020 21:16:01 +0800</lastBuildDate><atom:link href="https://ppmoon.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Golang将日志同时输出到控制台和文件</title>
       <link>https://ppmoon.github.io/posts/golang/golang-output-log-to-file-and-console/</link>
@@ -149,15 +149,6 @@
       
       <guid>https://ppmoon.github.io/posts/mysql/windows10-install-mysql5-7/</guid>
       <description>1.首先在mysql的官方网站下载mysql community server 5.7 由于我的win10是64位的所以我选择64zip下载。 http://dev.mysql.com/downloads/mysql/ 不用注册直接点击No thanks,just start my downlload. 2.解</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://ppmoon.github.io/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ppmoon.github.io/about/</guid>
-      <description>Nothing</description>
     </item>
     
   </channel>

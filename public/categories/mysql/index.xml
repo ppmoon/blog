@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>mysql on PPmoon&#39;s Blog</title>
-    <link>https://ppmoon.github.io/tags/mysql/</link>
+    <link>https://ppmoon.github.io/categories/mysql/</link>
     <description>Recent content in mysql on PPmoon&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 22 Mar 2019 17:30:54 +0800</lastBuildDate><atom:link href="https://ppmoon.github.io/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 22 Mar 2019 17:30:54 +0800</lastBuildDate><atom:link href="https://ppmoon.github.io/categories/mysql/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mysql基本操作</title>
       <link>https://ppmoon.github.io/posts/mysql/talk-about-mysql-operation/</link>

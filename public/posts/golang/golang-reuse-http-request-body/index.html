@@ -82,7 +82,7 @@
 <p>可是http.request是readcloser。我们将http.request readAll的时候讲无法再次读取http.request里面的信息。</p>
 <h2 id="如何才能将httprequestbody复制使用呢">如何才能将http.request.body复制使用呢？</h2>
 <p>其中c表示的是http的上下文</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#080;font-style:italic">// 把request的内容读取出来
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#080;font-style:italic">// 把request的内容读取出来
 </span><span style="color:#080;font-style:italic"></span><span style="color:#a2f;font-weight:bold">var</span> bodyBytes []<span style="color:#0b0;font-weight:bold">byte</span>
 <span style="color:#a2f;font-weight:bold">if</span> c.Request.Body <span style="color:#666">!=</span> <span style="color:#a2f;font-weight:bold">nil</span> {
 	bodyBytes, _ = ioutil.<span style="color:#00a000">ReadAll</span>(c.Request.Body)

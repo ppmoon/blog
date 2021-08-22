@@ -77,14 +77,14 @@
 
       <div><h1 id="mac如何在shell脚本当中获取时间">Mac如何在shell脚本当中获取时间</h1>
 <h2 id="获取今天的时间">获取今天的时间</h2>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">date
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">date
 2019年 8月26日 星期一 14时02分23秒 CST
 </code></pre></div><p>直接输入date就可以获取当前的时间（CST时间）</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">date -jnRu
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">date -jnRu
 Mon, <span style="color:#666">26</span> Aug <span style="color:#666">2019</span> 06:06:29 +0000
 </code></pre></div><p>如果加上参数<code>-jnRu</code>会显示格林威治时间(GMT)</p>
 <h2 id="时间格式化">时间格式化</h2>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">date +<span style="color:#b44">&#34;%Y-%m-%d %H:%M:%S&#34;</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">date +<span style="color:#b44">&#34;%Y-%m-%d %H:%M:%S&#34;</span>
 2019-08-26 14:28:14
 </code></pre></div><p>格式化数据可以直接使用加号，然后配合日期符号输出
 常用日期符号</p>
@@ -126,7 +126,7 @@ Mon, <span style="color:#666">26</span> Aug <span style="color:#666">2019</span>
 <p>mac下的date命令计算时间的方法和linux会不太一样</p>
 <p>命令参数为<code>[-v[+|-]val[ymwdHMS]]</code></p>
 <p>date 后加 -v 加减一个值，最后填写格式化参数格式化输出。都是在当前时间的基础上进行加减运算的</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">date -v-1d +<span style="color:#b44">&#34;%Y-%m-%d&#34;</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">date -v-1d +<span style="color:#b44">&#34;%Y-%m-%d&#34;</span>
 2019-08-25
 date -v-1y +<span style="color:#b44">&#34;%Y-%m-%d&#34;</span>
 2018-08-26
@@ -140,9 +140,9 @@ date -v+1S +<span style="color:#b44">&#34;%Y-%m-%d %H:%M:%S&#34;</span>
 2019-08-26 14:40:12
 </code></pre></div><h2 id="总结">总结</h2>
 <p>编写shell脚本执行的时候需要使用到时间，更多关于date命令的使用方法可以使用</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">man date
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">man date
 </code></pre></div><p>进行查看详细的使用方法或者输入一个错误的参数比如</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">date h
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">date h
 date: illegal <span style="color:#a2f">time</span> format
 usage: date <span style="color:#666">[</span>-jnRu<span style="color:#666">]</span> <span style="color:#666">[</span>-d dst<span style="color:#666">]</span> <span style="color:#666">[</span>-r seconds<span style="color:#666">]</span> <span style="color:#666">[</span>-t west<span style="color:#666">]</span> <span style="color:#666">[</span>-v<span style="color:#666">[</span>+|-<span style="color:#666">]</span>val<span style="color:#666">[</span>ymwdHMS<span style="color:#666">]]</span> ... 
             <span style="color:#666">[</span>-f fmt date | <span style="color:#666">[[[</span>mm<span style="color:#666">]</span>dd<span style="color:#666">]</span>HH<span style="color:#666">]</span>MM<span style="color:#666">[[</span>cc<span style="color:#666">]</span>yy<span style="color:#666">][</span>.ss<span style="color:#666">]]</span> <span style="color:#666">[</span>+format<span style="color:#666">]</span>

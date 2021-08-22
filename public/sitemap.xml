@@ -1,178 +1,91 @@
-<?xml-stylesheet type="text/xsl" href="https://ppmoon.github.io/sitemap.xsl"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
-  <url>
-    <loc>https://ppmoon.github.io/about/</loc>
-    <lastmod>2019-07-19T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ppmoon.github.io/tags/golang/</loc>
-    <lastmod>2020-03-11T21:16:01+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ppmoon.github.io/post/golang/golang-output-log-to-file-and-console/</loc>
-    <lastmod>2020-03-11T21:16:01+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ppmoon.github.io/post/</loc>
-    <lastmod>2020-03-11T21:16:01+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ppmoon.github.io/</loc>
-    <lastmod>2020-03-11T21:16:01+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ppmoon.github.io/tags/</loc>
-    <lastmod>2020-03-11T21:16:01+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ppmoon.github.io/tags/nas/</loc>
-    <lastmod>2019-09-17T20:00:00+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ppmoon.github.io/post/nas/how-to-adjust-the-led-indicator-light-brightness/</loc>
-    <lastmod>2019-09-17T20:00:00+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ppmoon.github.io/post/nas/how-to-power-off-in-synology-nas/</loc>
-    <lastmod>2019-09-16T20:00:00+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ppmoon.github.io/post/shell/mac-how-to-get-time-in-shell-script/</loc>
-    <lastmod>2019-08-26T14:00:00+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ppmoon.github.io/tags/shell/</loc>
-    <lastmod>2019-08-26T14:00:00+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ppmoon.github.io/tags/mysql/</loc>
-    <lastmod>2019-03-22T17:30:54+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ppmoon.github.io/post/mysql/talk-about-mysql-operation/</loc>
-    <lastmod>2019-03-22T17:30:54+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ppmoon.github.io/post/mysql/learn-how-to-read-mysql-manual/</loc>
-    <lastmod>2019-03-20T19:44:01+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ppmoon.github.io/post/golang/golang-reuse-http-request-body/</loc>
-    <lastmod>2018-10-20T15:10:01+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ppmoon.github.io/post/golang/golang-uint-cover-to-string/</loc>
-    <lastmod>2018-04-28T21:18:01+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ppmoon.github.io/post/golang/how-to-download-golang-org-package/</loc>
-    <lastmod>2018-04-25T12:14:01+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ppmoon.github.io/post/golang/how-to-write-a-cli-program-by-go/</loc>
-    <lastmod>2018-02-19T11:13:01+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ppmoon.github.io/post/golang/golang-cross-compile/</loc>
-    <lastmod>2018-02-16T14:44:01+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ppmoon.github.io/post/mysql/sql-operation-in/</loc>
-    <lastmod>2017-08-30T23:00:01+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ppmoon.github.io/post/golang/build-a-web-server-by-golang/</loc>
-    <lastmod>2017-04-19T01:27:01+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ppmoon.github.io/post/mysql/mysql-change-column-name/</loc>
-    <lastmod>2016-04-15T22:00:01+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ppmoon.github.io/post/mysql/mysql-error-1820-hy000-solution/</loc>
-    <lastmod>2016-02-01T19:44:01+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ppmoon.github.io/post/mysql/windows10-install-mysql5-7/</loc>
-    <lastmod>2016-01-27T17:30:54+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://ppmoon.github.io/categories/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
+    <lastmod>2020-03-11T21:16:01+08:00</lastmod>
+  </url><url>
+    <loc>https://ppmoon.github.io/tags/golang/</loc>
+    <lastmod>2020-03-11T21:16:01+08:00</lastmod>
+  </url><url>
+    <loc>https://ppmoon.github.io/categories/golang/</loc>
+    <lastmod>2020-03-11T21:16:01+08:00</lastmod>
+  </url><url>
+    <loc>https://ppmoon.github.io/posts/golang/golang-output-log-to-file-and-console/</loc>
+    <lastmod>2020-03-11T21:16:01+08:00</lastmod>
+  </url><url>
+    <loc>https://ppmoon.github.io/posts/</loc>
+    <lastmod>2020-03-11T21:16:01+08:00</lastmod>
+  </url><url>
+    <loc>https://ppmoon.github.io/</loc>
+    <lastmod>2020-03-11T21:16:01+08:00</lastmod>
+  </url><url>
+    <loc>https://ppmoon.github.io/tags/</loc>
+    <lastmod>2020-03-11T21:16:01+08:00</lastmod>
+  </url><url>
+    <loc>https://ppmoon.github.io/tags/nas/</loc>
+    <lastmod>2019-09-17T20:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://ppmoon.github.io/categories/nas/</loc>
+    <lastmod>2019-09-17T20:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://ppmoon.github.io/posts/nas/how-to-adjust-the-led-indicator-light-brightness/</loc>
+    <lastmod>2019-09-17T20:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://ppmoon.github.io/posts/nas/how-to-power-off-in-synology-nas/</loc>
+    <lastmod>2019-09-16T20:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://ppmoon.github.io/posts/shell/mac-how-to-get-time-in-shell-script/</loc>
+    <lastmod>2019-08-26T14:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://ppmoon.github.io/tags/shell/</loc>
+    <lastmod>2019-08-26T14:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://ppmoon.github.io/categories/shell/</loc>
+    <lastmod>2019-08-26T14:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://ppmoon.github.io/tags/mysql/</loc>
+    <lastmod>2019-03-22T17:30:54+08:00</lastmod>
+  </url><url>
+    <loc>https://ppmoon.github.io/categories/mysql/</loc>
+    <lastmod>2019-03-22T17:30:54+08:00</lastmod>
+  </url><url>
+    <loc>https://ppmoon.github.io/posts/mysql/talk-about-mysql-operation/</loc>
+    <lastmod>2019-03-22T17:30:54+08:00</lastmod>
+  </url><url>
+    <loc>https://ppmoon.github.io/posts/mysql/learn-how-to-read-mysql-manual/</loc>
+    <lastmod>2019-03-20T19:44:01+08:00</lastmod>
+  </url><url>
+    <loc>https://ppmoon.github.io/posts/golang/golang-reuse-http-request-body/</loc>
+    <lastmod>2018-10-20T15:10:01+08:00</lastmod>
+  </url><url>
+    <loc>https://ppmoon.github.io/posts/golang/golang-uint-cover-to-string/</loc>
+    <lastmod>2018-04-28T21:18:01+08:00</lastmod>
+  </url><url>
+    <loc>https://ppmoon.github.io/posts/golang/how-to-download-golang-org-package/</loc>
+    <lastmod>2018-04-25T12:14:01+08:00</lastmod>
+  </url><url>
+    <loc>https://ppmoon.github.io/posts/golang/how-to-write-a-cli-program-by-go/</loc>
+    <lastmod>2018-02-19T11:13:01+08:00</lastmod>
+  </url><url>
+    <loc>https://ppmoon.github.io/posts/golang/golang-cross-compile/</loc>
+    <lastmod>2018-02-16T14:44:01+08:00</lastmod>
+  </url><url>
+    <loc>https://ppmoon.github.io/posts/mysql/sql-operation-in/</loc>
+    <lastmod>2017-08-30T23:00:01+08:00</lastmod>
+  </url><url>
+    <loc>https://ppmoon.github.io/posts/golang/build-a-web-server-by-golang/</loc>
+    <lastmod>2017-04-19T01:27:01+08:00</lastmod>
+  </url><url>
+    <loc>https://ppmoon.github.io/posts/mysql/mysql-change-column-name/</loc>
+    <lastmod>2016-04-15T22:00:01+08:00</lastmod>
+  </url><url>
+    <loc>https://ppmoon.github.io/posts/mysql/mysql-error-1820-hy000-solution/</loc>
+    <lastmod>2016-02-01T19:44:01+08:00</lastmod>
+  </url><url>
+    <loc>https://ppmoon.github.io/posts/mysql/windows10-install-mysql5-7/</loc>
+    <lastmod>2016-01-27T17:30:54+08:00</lastmod>
+  </url><url>
+    <loc>https://ppmoon.github.io/about/</loc>
   </url>
-  
 </urlset>

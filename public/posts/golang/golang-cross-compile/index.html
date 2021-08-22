@@ -82,7 +82,7 @@
 <p>golang的交叉编译要保证golang版本在1.5以上，本解决方案实例代码1.9版本执行的。</p>
 <h3 id="我们想要编译的文件hellogo">我们想要编译的文件hello.go</h3>
 <p>hello.go</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-golang" data-lang="golang"><span style="color:#a2f;font-weight:bold">package</span> main
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-golang" data-lang="golang"><span style="color:#a2f;font-weight:bold">package</span> main
 
 <span style="color:#a2f;font-weight:bold">import</span> <span style="color:#b44">&#34;fmt&#34;</span>
 
@@ -91,7 +91,7 @@
 }
 </code></pre></div><h3 id="在mac上编译64位linux的命令编译命令">在mac上编译64位linux的命令编译命令</h3>
 <p>bash:</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#b8860b">GOOS</span><span style="color:#666">=</span>linux <span style="color:#b8860b">GOARCH</span><span style="color:#666">=</span>amd64 go build hello.go
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#b8860b">GOOS</span><span style="color:#666">=</span>linux <span style="color:#b8860b">GOARCH</span><span style="color:#666">=</span>amd64 go build hello.go
 </code></pre></div><p>上面这段代码直接在命令控制台里面运行就可以生成64位linux的可执行程序。</p>
 <h3 id="参数解析">参数解析</h3>
 <p>这里用到了两个变量：</p>
@@ -133,7 +133,7 @@
 <p>编译其他平台的时候根据上面表格参数执行编译就可以了。</p>
 <h2 id="扩展阅读">扩展阅读</h2>
 <p>在网络上的诸多教程中可能会看到下面的编译命令</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#b8860b">CGO_ENABLED</span><span style="color:#666">=</span><span style="color:#666">0</span> <span style="color:#b8860b">GOOS</span><span style="color:#666">=</span>linux <span style="color:#b8860b">GOARCH</span><span style="color:#666">=</span>amd64 go build hello.go
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#b8860b">CGO_ENABLED</span><span style="color:#666">=</span><span style="color:#666">0</span> <span style="color:#b8860b">GOOS</span><span style="color:#666">=</span>linux <span style="color:#b8860b">GOARCH</span><span style="color:#666">=</span>amd64 go build hello.go
 </code></pre></div><p>其中CGO_ENABLED=0的意思是使用C语言版本的GO编译器，参数配置为0的时候就关闭C语言版本的编译器了。自从golang1.5以后go就使用go语言编译器进行编译了。在golang1.9当中没有使用CGO_ENABLED参数发现依然可以正常编译。当然使用了也可以正常编译。比如把CGO_ENABLED参数设置成1，即在编译的过程当中使用CGO编译器，我发现依然是可以正常编译的。</p>
 <p>实际上如果在go当中使用了C的库，比如<code>import &quot;C&quot;</code>默认使用go build的时候就会启动CGO编译器，当然我们可以使用CGO_ENABLED=0来控制go build是否使用CGO编译器。</p>
 <p>以上若有错误欢迎指正。</p>

@@ -80,7 +80,7 @@
 <h1 id="解决思路">解决思路</h1>
 <p>log包可以通过SetOutput()方法指定日志输出的方式（Writer），但是只能指定一个输出的方式（Writer）。我们利用io.MultiWriter()将多个Writer拼成一个Writer使用的特性，把log.Println()输出的内容分流到控制台和文件当中。</p>
 <h1 id="代码">代码</h1>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-golang" data-lang="golang"><span style="color:#a2f;font-weight:bold">package</span> main
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-golang" data-lang="golang"><span style="color:#a2f;font-weight:bold">package</span> main
 
 <span style="color:#a2f;font-weight:bold">import</span> (
 	<span style="color:#b44">&#34;io&#34;</span>

@@ -85,17 +85,17 @@ GOPATH的目录是这样的。我们通过go get下载的包会
 其中google.golang.org和golang.org在国内是无法直接使用go get获取的。所以我们使用github的替代方案。</p>
 <h4 id="以下载grpc为例">以下载grpc为例</h4>
 <p>grpc官方提供的下载命令是：</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">go get google.golang.org/grpc
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">go get google.golang.org/grpc
 </code></pre></div><p>因为无法访问，所以我们需要在<code>$GOPATH/src</code>目录下面创建一个<code>google.golang.org</code>的目录。
 在github上找到对应的grpc的包，https://github.com/grpc/grpc-go 
 其实google.golang.org对应的就是https://github.com/grpc/grpc-go
 然后我们进入到<code>$GOPATH/src/google.golang.org</code>这个目录。执行git命令</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">git clone --depth=1 https://github.com/grpc/grpc-go.git grpc
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">git clone --depth=1 https://github.com/grpc/grpc-go.git grpc
 </code></pre></div><p>命令解析：
 其中&ndash;depth=1 这个参数的意思是只克隆最新的commit分支。不加也行。
 最后的grpc表示的是将克隆的文件存放到那个文件夹里面。
 执行完上面的命令，我们就成功的将grpc的包下载到本地了。</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">go get google.golang.org/grpc
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">go get google.golang.org/grpc
 </code></pre></div><p>golang当中go get其实执行了两个操作，一个是git clone 另外一个go install。所以我们还要进入到<code>$GOPATH/src/google.golang.org/grpc</code>当中执行以下<code>go install</code> 。这个命令会在<code>$GOPATH/pkg/google.golang.org/grpc</code>下面生成一个grpc.a的外部包文件。用于和其他程序访问和编译。并且在<code>go install</code>的过程当中我们可以检查哪些相关依赖的包没有安装，可以使用相同的办法进行安装。</p>
 <h1 id="注意">注意</h1>
 <p>为什么不能直接git clone到src目录里使用？其实这样也没问题的。但是会引来一个麻烦，就是go的import引入包是通过src下面的路径来引入的。引用第三方的包的时候可能还是会使用到golang.org目录下的包，这个时候你可能需要修改代码或者去迁移还是很麻烦。所以才有以上git clone 然后替换目录的办法。</p>

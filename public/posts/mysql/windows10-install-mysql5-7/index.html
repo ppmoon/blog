@@ -63,7 +63,7 @@
     
       <a href="/categories/mysql">mysql</a>
   </strong>
-  <span> • 537 words</span>
+  <span> • 646 words</span>
   <span> • 2 minute read</span>
   
   
@@ -112,8 +112,8 @@
 <p><img src="http://upload-images.jianshu.io/upload_images/677473-0c1fe311189901ed.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="跳过验证"></p>
 <p><img src="http://upload-images.jianshu.io/upload_images/677473-a3eb2be55b9dff57.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="进入mysql"></p>
 <h2 id="6重置root密码">6.重置root密码</h2>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#a2f;font-weight:bold">update</span> mysql.<span style="color:#a2f;font-weight:bold">user</span> <span style="color:#a2f;font-weight:bold">set</span> authentication_string<span style="color:#666">=</span>password(<span style="color:#b44">&#39;123456&#39;</span>) <span style="color:#a2f;font-weight:bold">where</span> <span style="color:#a2f;font-weight:bold">user</span><span style="color:#666">=</span><span style="color:#b44">&#39;root&#39;</span> <span style="color:#a2f;font-weight:bold">and</span> <span style="color:#a2f;font-weight:bold">Host</span> <span style="color:#666">=</span> <span style="color:#b44">&#39;localhost&#39;</span>;
-</code></pre></div><p><img src="http://upload-images.jianshu.io/upload_images/677473-df49d7939914034b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="重置密码"></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#a2f;font-weight:bold">update</span><span style="color:#bbb"> </span>mysql.<span style="color:#a2f;font-weight:bold">user</span><span style="color:#bbb"> </span><span style="color:#a2f;font-weight:bold">set</span><span style="color:#bbb"> </span>authentication_string<span style="color:#666">=</span>password(<span style="color:#b44">&#39;123456&#39;</span>)<span style="color:#bbb"> </span><span style="color:#a2f;font-weight:bold">where</span><span style="color:#bbb"> </span><span style="color:#a2f;font-weight:bold">user</span><span style="color:#666">=</span><span style="color:#b44">&#39;root&#39;</span><span style="color:#bbb"> </span><span style="color:#a2f;font-weight:bold">and</span><span style="color:#bbb"> </span><span style="color:#a2f;font-weight:bold">Host</span><span style="color:#bbb"> </span><span style="color:#666">=</span><span style="color:#bbb"> </span><span style="color:#b44">&#39;localhost&#39;</span>;<span style="color:#bbb">
+</span></code></pre></div><p><img src="http://upload-images.jianshu.io/upload_images/677473-df49d7939914034b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="重置密码"></p>
 <p>这样我们就可以用我们设置的密码登录mysql了。</p>
 </div>
     </article>

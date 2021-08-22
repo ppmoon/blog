@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>nas on PPmoon&#39;s Blog</title>
-    <link>https://ppmoon.github.io/tags/nas/</link>
+    <link>https://ppmoon.github.io/categories/nas/</link>
     <description>Recent content in nas on PPmoon&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 17 Sep 2019 20:00:00 +0800</lastBuildDate><atom:link href="https://ppmoon.github.io/tags/nas/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 17 Sep 2019 20:00:00 +0800</lastBuildDate><atom:link href="https://ppmoon.github.io/categories/nas/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>群晖NAS如何调整LED指示灯的亮度</title>
       <link>https://ppmoon.github.io/posts/nas/how-to-adjust-the-led-indicator-light-brightness/</link>
