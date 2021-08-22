@@ -1,0 +1,15 @@
+ {{ define "main" }}
+	<main>
+		{{ $scratch := newScratch }}
+		{{ range (where .Site.RegularPages "Type" "in" (slice "posts")) }}
+		{{ $scratch.Add "wordCount" .WordCount }}
+		{{ $scratch.Add "postCount" 1 }}
+		{{ end }}
+		<p>Total Posts Count:{{ $scratch.Get "postCount" | lang.FormatNumber 0 }}  Total Word Count:{{ $scratch.Get "wordCount" | lang.FormatNumber 0 }}</p>
+		{{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
+		{{ range $paginator.Pages }}
+			{{ .Render "summary" }}
+		{{ end }}
+		{{ partial "pagination.html" . }}
+	</main>
+{{ end }}
