@@ -1,2 +1,0 @@
-User-agent: *
-Sitemap: https://ppmoon.github.io/sitemap.xml
