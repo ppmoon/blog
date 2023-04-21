@@ -8,7 +8,7 @@ tags: ["mysql"]
 
 在开始讨论Mysql的基本操作之前我们需要先明确主体，即我们操作的是什么？下面我们忽略一些具体细节来了解一下Mysql这款数据库管理数据的结构和单元。
 
-{{< mermaid >}}
+```mermaid
 graph TD;
     Mysql-->Database1;
     Mysql-->Database2;
@@ -21,7 +21,7 @@ graph TD;
     Database3-->Table6;
     Table3-->Data1;
     Table3-->Data2;
-{{< /mermaid >}}
+```
 
 通过上图我们了解到Mysql可以管理多个数据库，每一个数据库又可以管理多个表，表里又管理了千千万万的数据；我们使用Mysql操作的就是数据库，数据库中的表格以及表格当中的数据。
 
