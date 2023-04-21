@@ -7,7 +7,8 @@ time=$(date "+%Y%m%d-%H%M%S")
 echo "===执行git commit -m ${time}==="
 git commit -m"${time}"
 echo "===执行git push==="
-git push
+git push origin
+git push home
 echo "===更新结束博客模板==="
 echo "===开始更新博客内容==="
 echo "===执行hugo命令生成博客静态文件==="
