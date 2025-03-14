@@ -1,11 +1,14 @@
 @echo off
+REM 设置命令行编码为 UTF-8
+chcp 65001 >nul
+
 echo ===开始更新博客模板===
 echo ===执行git pull===
 git pull
 echo ===执行git add .===
 git add .
 
-REM 获取当前日期时间戳：格式为 yyyyMMdd-HHmmss
+REM 获取当前日期时间戳，格式为 yyyyMMdd-HHmmss
 for /f "tokens=*" %%i in ('powershell -Command "Get-Date -Format yyyyMMdd-HHmmss"') do set timestamp=%%i
 echo ===执行git commit -m %timestamp%===
 git commit -m"%timestamp%"
