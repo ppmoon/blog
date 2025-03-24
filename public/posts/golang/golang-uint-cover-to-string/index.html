@@ -78,11 +78,11 @@
       <div><h2 id="问题golang-uint类型如何转换成string">问题golang uint类型如何转换成string</h2>
 <p>这里值得注意的地方时，本文说的不是uint8，uint64就是uint类型。</p>
 <h2 id="解决方法">解决方法</h2>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>var a uint = 1
-</span></span><span style="display:flex;"><span>b := strconv.Itoa(int(a))
-</span></span><span style="display:flex;"><span>c := string(b)
-</span></span><span style="display:flex;"><span>d := string(a)
-</span></span><span style="display:flex;"><span>fmt.Println(c)
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span><span style="color:#a2f;font-weight:bold">var</span> a uint <span style="color:#666">=</span> <span style="color:#666">1</span>
+</span></span><span style="display:flex;"><span>b :<span style="color:#666">=</span> strconv<span style="color:#666">.</span>Itoa(<span style="color:#d2413a;font-weight:bold">int</span>(a))
+</span></span><span style="display:flex;"><span>c :<span style="color:#666">=</span> string(b)
+</span></span><span style="display:flex;"><span>d :<span style="color:#666">=</span> string(a)
+</span></span><span style="display:flex;"><span>fmt<span style="color:#666">.</span>Println(c)
 </span></span></code></pre></div><p>使用strconv的Itoa方法先将uint转换成int类型，再将int类型转换成string。</p>
 </div>
     </article>
@@ -109,7 +109,7 @@
     </p>
   
   <p class="copyright">
-    Copyright © 2023
+    Copyright © 2025
     <a href="https://ppmoon.github.io/"><strong>PPmoon</strong></a>.
     This work is licensed under the
     <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> license.

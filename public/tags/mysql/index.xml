@@ -1,65 +1,54 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>mysql on PPmoon&#39;s Blog</title>
+    <title>Mysql on PPmoon&#39;s Blog</title>
     <link>https://ppmoon.github.io/tags/mysql/</link>
-    <description>Recent content in mysql on PPmoon&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Mysql on PPmoon&#39;s Blog</description>
+    <generator>Hugo</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 22 Mar 2019 17:30:54 +0800</lastBuildDate><atom:link href="https://ppmoon.github.io/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 22 Mar 2019 17:30:54 +0800</lastBuildDate>
+    <atom:link href="https://ppmoon.github.io/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mysql基本操作</title>
       <link>https://ppmoon.github.io/posts/mysql/talk-about-mysql-operation/</link>
       <pubDate>Fri, 22 Mar 2019 17:30:54 +0800</pubDate>
-      
       <guid>https://ppmoon.github.io/posts/mysql/talk-about-mysql-operation/</guid>
-      <description>在开始讨论Mysql的基本操作之前我们需要先明确主体，即我们操作的是什么？下面我们忽略一些具体细节来了解一下Mysql这款数据库管理数据的结</description>
+      <description>&lt;p&gt;在开始讨论Mysql的基本操作之前我们需要先明确主体，即我们操作的是什么？下面我们忽略一些具体细节来了解一下Mysql这款数据库管理数据的结构和单元。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>学习如何使用mysql的手册</title>
       <link>https://ppmoon.github.io/posts/mysql/learn-how-to-read-mysql-manual/</link>
       <pubDate>Wed, 20 Mar 2019 19:44:01 +0800</pubDate>
-      
       <guid>https://ppmoon.github.io/posts/mysql/learn-how-to-read-mysql-manual/</guid>
-      <description>mysql不同的版本会有不同的语法特性，如何才能知道当前版本的语法是什么样子的呢？最好的办法就是查看mysql的帮助手册。 查看mysql的手</description>
+      <description>&lt;p&gt;mysql不同的版本会有不同的语法特性，如何才能知道当前版本的语法是什么样子的呢？最好的办法就是查看mysql的帮助手册。&lt;/p&gt;&#xA;&lt;p&gt;查看mysql的手册只需要一个问号 + 关键词 就可以了：&#xA;比如我要查看show命令的使用说明可以直接在mysql的控制台输入 ? show&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>SQL的IN操作符</title>
       <link>https://ppmoon.github.io/posts/mysql/sql-operation-in/</link>
       <pubDate>Wed, 30 Aug 2017 23:00:01 +0800</pubDate>
-      
       <guid>https://ppmoon.github.io/posts/mysql/sql-operation-in/</guid>
-      <description>IN操作符 IN操作符允许我们在WHERE子句中规定多个值。 这个操作符可以让我们在表中选取有一定规律的特定值，比如多个同样的订单选取最新的一个</description>
+      <description>&lt;h2 id=&#34;in操作符&#34;&gt;IN操作符&lt;/h2&gt;&#xA;&lt;p&gt;IN操作符允许我们在WHERE子句中规定多个值。&#xA;这个操作符可以让我们在表中选取有一定规律的特定值，比如多个同样的订单选取最新的一个。&lt;/p&gt;&#xA;&lt;p&gt;SQL IN 语法&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a2f;font-weight:bold&#34;&gt;SELECT&lt;/span&gt;&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;&lt;span style=&#34;&#34;&gt;列名&lt;/span&gt;&lt;span style=&#34;color:#bbb&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#bbb&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#a2f;font-weight:bold&#34;&gt;FROM&lt;/span&gt;&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;&lt;span style=&#34;&#34;&gt;表明&lt;/span&gt;&lt;span style=&#34;color:#bbb&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#bbb&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#a2f;font-weight:bold&#34;&gt;WHERE&lt;/span&gt;&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;&lt;span style=&#34;&#34;&gt;列名&lt;/span&gt;&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#a2f;font-weight:bold&#34;&gt;IN&lt;/span&gt;&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;(value1,value2,...)&lt;span style=&#34;color:#bbb&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;例子&#34;&gt;例子&lt;/h2&gt;&#xA;&lt;p&gt;简单的例子网上有，这里说一个复杂点的例子&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>mysql修改字段名称</title>
       <link>https://ppmoon.github.io/posts/mysql/mysql-change-column-name/</link>
       <pubDate>Fri, 15 Apr 2016 22:00:01 +0800</pubDate>
-      
       <guid>https://ppmoon.github.io/posts/mysql/mysql-change-column-name/</guid>
-      <description>在mysql当中如果字段创建以后想修改名字怎么办？ alter table 表名 change 旧字段名 新字段名 字段属性; 举个例子： 修改users表的name字段为userna</description>
+      <description>&lt;h1 id=&#34;在mysql当中如果字段创建以后想修改名字怎么办&#34;&gt;在mysql当中如果字段创建以后想修改名字怎么办？&lt;/h1&gt;&#xA;&lt;p&gt;alter table 表名 change 旧字段名 新字段名 字段属性;&#xA;举个例子：&lt;/p&gt;&#xA;&lt;p&gt;修改users表的name字段为username&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a2f;font-weight:bold&#34;&gt;alter&lt;/span&gt;&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#a2f;font-weight:bold&#34;&gt;table&lt;/span&gt;&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;users&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;change&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;name&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;username&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#a2f&#34;&gt;varchar&lt;/span&gt;(&lt;span style=&#34;color:#666&#34;&gt;25&lt;/span&gt;);&lt;span style=&#34;color:#bbb&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;个人觉得这个change的方法是销毁掉原来的字段再在原来的地方常见新字段的方法来更换字段名称。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>mysql ERROR 1820 (HY000)解决办法</title>
       <link>https://ppmoon.github.io/posts/mysql/mysql-error-1820-hy000-solution/</link>
       <pubDate>Mon, 01 Feb 2016 19:44:01 +0800</pubDate>
-      
       <guid>https://ppmoon.github.io/posts/mysql/mysql-error-1820-hy000-solution/</guid>
-      <description>本解决办法是针对如何错误提示： ERROR 1820 (HY000): You must reset your password using ALTER USER statement before executing this statement. 为了保证安全，mysql会对用户的密码设置使用期限，我们只要让他不过期就可以了</description>
+      <description>&lt;p&gt;本解决办法是针对如何错误提示：&#xA;ERROR 1820 (HY000): You must reset your password using ALTER USER statement before executing this statement.&#xA;为了保证安全，mysql会对用户的密码设置使用期限，我们只要让他不过期就可以了。&#xA;step 1: SET PASSWORD = PASSWORD(‘写你的新密码‘);&#xA;step 2: ALTER USER ‘root‘@‘localhost‘ PASSWORD EXPIRE NEVER;&#xA;step 3: flush privileges;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>windows10安装mysql5.7</title>
       <link>https://ppmoon.github.io/posts/mysql/windows10-install-mysql5-7/</link>
       <pubDate>Wed, 27 Jan 2016 17:30:54 +0800</pubDate>
-      
       <guid>https://ppmoon.github.io/posts/mysql/windows10-install-mysql5-7/</guid>
-      <description>1.首先在mysql的官方网站下载mysql community server 5.7 由于我的win10是64位的所以我选择64zip下载。 http://dev.mysql.com/downloads/mysql/ 不用注册直接点击No thanks,just start my downlload. 2.解</description>
+      <description>&lt;h2 id=&#34;1首先在mysql的官方网站下载mysql-community-server-57&#34;&gt;1.首先在mysql的官方网站下载mysql community server 5.7&lt;/h2&gt;&#xA;&lt;p&gt;由于我的win10是64位的所以我选择64zip下载。&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://dev.mysql.com/downloads/mysql/&#34;&gt;http://dev.mysql.com/downloads/mysql/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://upload-images.jianshu.io/upload_images/677473-eb53d313cb10a643.png&#34; alt=&#34;mysql下载页面&#xA;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;不用注册直接点击No thanks,just start my downlload.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://upload-images.jianshu.io/upload_images/677473-6f62b804ca626676.png&#34; alt=&#34;不用注册&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;2解压文件为bin文件夹添加到环境变量&#34;&gt;2.解压文件为bin文件夹添加到环境变量&lt;/h2&gt;&#xA;&lt;p&gt;这部分很重要不赘述了。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://upload-images.jianshu.io/upload_images/677473-892ca7aef4a4e1e1.png&#34; alt=&#34;添加环境变量&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;3配置mysql配置文件&#34;&gt;3.配置mysql配置文件&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://upload-images.jianshu.io/upload_images/677473-2e7fa21425341d63.png&#34; alt=&#34;mysql配置文件&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;配置mysql程序所在目录和mysql数据存放目录&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

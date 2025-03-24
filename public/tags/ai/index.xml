@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ai on PPmoon&#39;s Blog</title>
+    <link>https://ppmoon.github.io/tags/ai/</link>
+    <description>Recent content in Ai on PPmoon&#39;s Blog</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 14 Mar 2025 23:00:00 +0800</lastBuildDate>
+    <atom:link href="https://ppmoon.github.io/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2025人工智能漫谈（一）</title>
+      <link>https://ppmoon.github.io/posts/ai/ai1/</link>
+      <pubDate>Fri, 14 Mar 2025 23:00:00 +0800</pubDate>
+      <guid>https://ppmoon.github.io/posts/ai/ai1/</guid>
+      <description>&lt;h1 id=&#34;2025人工智能漫谈一&#34;&gt;2025人工智能漫谈（一）&lt;/h1&gt;&#xA;&lt;h2 id=&#34;什么是智能&#34;&gt;什么是智能？&lt;/h2&gt;&#xA;&lt;p&gt;2016年，我在网上看了一门人工智能的公开课。课程中的老教授提出了这个问题——什么是智能？&#xA;计算器可以对数字进行加减乘除的计算。通过按键可以得出1+1=2的结论。这种机器是否算作具备智能？&#xA;甚至有一些高级的科学计算器还有进行微积分运算，对函数求导。这种科学计算器是否算作具备智能？&#xA;在2025年的今天，大量现代化的汽车装配了自适应巡航软件，这种软件不仅可以让汽车沿着车道线直线行驶，甚至在弯道处可以自行转弯。这种具备自适应巡航的软件又是否可以称之为智能呢？&#xA;我的看法是，上述这些工具，无论是计算器还是支持自适应巡航的汽车都无法看起来像人一样那么聪明灵活，可以随机应变。直到ChatGPT的出现，他利用transform算法，通过堆模型参数制作的大语言模型使电脑软件可以像人一样涌现了智能。&#xA;这种智能是全方位的，他可以回答人类的提问、做数学题、写代码。让人类觉得，我们好像真的在和一个真人交谈一样。那以ChatGPT为代表的大语言模型就真的称得上是具备智能吗？&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

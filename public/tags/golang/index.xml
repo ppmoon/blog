@@ -1,74 +1,61 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>golang on PPmoon&#39;s Blog</title>
+    <title>Golang on PPmoon&#39;s Blog</title>
     <link>https://ppmoon.github.io/tags/golang/</link>
-    <description>Recent content in golang on PPmoon&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Golang on PPmoon&#39;s Blog</description>
+    <generator>Hugo</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 11 Mar 2020 21:16:01 +0800</lastBuildDate><atom:link href="https://ppmoon.github.io/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 11 Mar 2020 21:16:01 +0800</lastBuildDate>
+    <atom:link href="https://ppmoon.github.io/tags/golang/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Golang将日志同时输出到控制台和文件</title>
       <link>https://ppmoon.github.io/posts/golang/golang-output-log-to-file-and-console/</link>
       <pubDate>Wed, 11 Mar 2020 21:16:01 +0800</pubDate>
-      
       <guid>https://ppmoon.github.io/posts/golang/golang-output-log-to-file-and-console/</guid>
-      <description>问题背景 日常开发当中需要将golang的log包打印的日志同时输出到控制台和文件，应该如何解决这个问题？ 解决思路 log包可以通过SetOut</description>
+      <description>&lt;h1 id=&#34;问题背景&#34;&gt;问题背景&lt;/h1&gt;&#xA;&lt;p&gt;日常开发当中需要将golang的log包打印的日志同时输出到控制台和文件，应该如何解决这个问题？&lt;/p&gt;&#xA;&lt;h1 id=&#34;解决思路&#34;&gt;解决思路&lt;/h1&gt;&#xA;&lt;p&gt;log包可以通过SetOutput()方法指定日志输出的方式（Writer），但是只能指定一个输出的方式（Writer）。我们利用io.MultiWriter()将多个Writer拼成一个Writer使用的特性，把log.Println()输出的内容分流到控制台和文件当中。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>golang复用http-request-body</title>
       <link>https://ppmoon.github.io/posts/golang/golang-reuse-http-request-body/</link>
       <pubDate>Sat, 20 Oct 2018 15:10:01 +0800</pubDate>
-      
       <guid>https://ppmoon.github.io/posts/golang/golang-reuse-http-request-body/</guid>
-      <description>问题及场景 业务当中有需要分发http.request.body的场景。比如微信回调消息只能指定一个地址，所以期望可以复制一份消息发给其他服务</description>
+      <description>&lt;h2 id=&#34;问题及场景&#34;&gt;问题及场景&lt;/h2&gt;&#xA;&lt;p&gt;业务当中有需要分发http.request.body的场景。比如微信回调消息只能指定一个地址，所以期望可以复制一份消息发给其他服务。由服务B和接收微信回调的服务A一起处理微信回调信息。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>golang-uint类型如何转换成string</title>
       <link>https://ppmoon.github.io/posts/golang/golang-uint-cover-to-string/</link>
       <pubDate>Sat, 28 Apr 2018 21:18:01 +0800</pubDate>
-      
       <guid>https://ppmoon.github.io/posts/golang/golang-uint-cover-to-string/</guid>
-      <description>问题golang uint类型如何转换成string 这里值得注意的地方时，本文说的不是uint8，uint64就是uint类型。 解决方法 var a uint</description>
+      <description>&lt;h2 id=&#34;问题golang-uint类型如何转换成string&#34;&gt;问题golang uint类型如何转换成string&lt;/h2&gt;&#xA;&lt;p&gt;这里值得注意的地方时，本文说的不是uint8，uint64就是uint类型。&lt;/p&gt;&#xA;&lt;h2 id=&#34;解决方法&#34;&gt;解决方法&lt;/h2&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-gdscript3&#34; data-lang=&#34;gdscript3&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a2f;font-weight:bold&#34;&gt;var&lt;/span&gt; a uint &lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#666&#34;&gt;1&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;b :&lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt; strconv&lt;span style=&#34;color:#666&#34;&gt;.&lt;/span&gt;Itoa(&lt;span style=&#34;color:#d2413a;font-weight:bold&#34;&gt;int&lt;/span&gt;(a))&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;c :&lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt; string(b)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;d :&lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt; string(a)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;fmt&lt;span style=&#34;color:#666&#34;&gt;.&lt;/span&gt;Println(c)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;使用strconv的Itoa方法先将uint转换成int类型，再将int类型转换成string。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>国内go如何下载golang-org的包</title>
       <link>https://ppmoon.github.io/posts/golang/how-to-download-golang-org-package/</link>
       <pubDate>Wed, 25 Apr 2018 12:14:01 +0800</pubDate>
-      
       <guid>https://ppmoon.github.io/posts/golang/how-to-download-golang-org-package/</guid>
-      <description>如何下载golang.org的包？ 由于墙的原因，golang.org这个域名下的资源是无法访问的。我们无法下载golang.org上面的包，</description>
+      <description>&lt;h1 id=&#34;如何下载golangorg的包&#34;&gt;如何下载golang.org的包？&lt;/h1&gt;&#xA;&lt;p&gt;由于墙的原因，golang.org这个域名下的资源是无法访问的。我们无法下载golang.org上面的包，好在golang的包都管理在github所以我们可以访问github来下载golang.org的包。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>go如何编写命令行(cli)程序</title>
       <link>https://ppmoon.github.io/posts/golang/how-to-write-a-cli-program-by-go/</link>
       <pubDate>Mon, 19 Feb 2018 11:13:01 +0800</pubDate>
-      
       <guid>https://ppmoon.github.io/posts/golang/how-to-write-a-cli-program-by-go/</guid>
-      <description>创建一个命令行程序 问题 如何使用golang创建可以在命令行当中传递参数的程序？go程序如何带参数执行？ 比如我们期望使用hello -versi</description>
+      <description>&lt;h1 id=&#34;创建一个命令行程序&#34;&gt;创建一个命令行程序&lt;/h1&gt;&#xA;&lt;h2 id=&#34;问题&#34;&gt;问题&lt;/h2&gt;&#xA;&lt;p&gt;如何使用golang创建可以在命令行当中传递参数的程序？go程序如何带参数执行？&lt;/p&gt;&#xA;&lt;p&gt;比如我们期望使用&lt;em&gt;hello -version&lt;/em&gt;来查看hello程序的版本号码。或者输入&lt;em&gt;hello language chinese&lt;/em&gt; 来切换hello程序的语言版本。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>go如何进行交叉编译</title>
       <link>https://ppmoon.github.io/posts/golang/golang-cross-compile/</link>
       <pubDate>Fri, 16 Feb 2018 14:44:01 +0800</pubDate>
-      
       <guid>https://ppmoon.github.io/posts/golang/golang-cross-compile/</guid>
-      <description>golang交叉编译 问题 golang如何在一个平台编译另外一个平台可以执行的文件。比如在mac上编译Windows和linux可以执行的文件</description>
+      <description>&lt;h1 id=&#34;golang交叉编译&#34;&gt;golang交叉编译&lt;/h1&gt;&#xA;&lt;h2 id=&#34;问题&#34;&gt;问题&lt;/h2&gt;&#xA;&lt;p&gt;golang如何在一个平台编译另外一个平台可以执行的文件。比如在mac上编译Windows和linux可以执行的文件。那么我们的问题就设定成：如何在mac上编译64位linux的可执行文件。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Go编写一个简单的web服务器</title>
       <link>https://ppmoon.github.io/posts/golang/build-a-web-server-by-golang/</link>
       <pubDate>Wed, 19 Apr 2017 01:27:01 +0800</pubDate>
-      
       <guid>https://ppmoon.github.io/posts/golang/build-a-web-server-by-golang/</guid>
-      <description>Go是一款静态里语言，特点就是拥有极好的并发编程体验。下面是使用Go实现的一个并发，非阻塞的web服务器。 代码 package main import ( &amp;#34;fmt&amp;#34; &amp;#34;net/http&amp;#34; &amp;#34;strings&amp;#34; &amp;#34;log&amp;#34; ) func sayhelloName(w http.ResponseWriter, r *http.Request) {</description>
+      <description>&lt;p&gt;Go是一款静态里语言，特点就是拥有极好的并发编程体验。下面是使用Go实现的一个并发，非阻塞的web服务器。&lt;/p&gt;&#xA;&lt;h2 id=&#34;代码&#34;&gt;代码&lt;/h2&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-golang&#34; data-lang=&#34;golang&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a2f;font-weight:bold&#34;&gt;package&lt;/span&gt; main&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a2f;font-weight:bold&#34;&gt;import&lt;/span&gt; (&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&lt;span style=&#34;color:#b44&#34;&gt;&amp;#34;fmt&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&lt;span style=&#34;color:#b44&#34;&gt;&amp;#34;net/http&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&lt;span style=&#34;color:#b44&#34;&gt;&amp;#34;strings&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&lt;span style=&#34;color:#b44&#34;&gt;&amp;#34;log&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a2f;font-weight:bold&#34;&gt;func&lt;/span&gt; &lt;span style=&#34;color:#00a000&#34;&gt;sayhelloName&lt;/span&gt;(w http.ResponseWriter, r &lt;span style=&#34;color:#666&#34;&gt;*&lt;/span&gt;http.Request) {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;r.&lt;span style=&#34;color:#00a000&#34;&gt;ParseForm&lt;/span&gt;()  &lt;span style=&#34;color:#080;font-style:italic&#34;&gt;//解析参数，默认是不会解析的&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;fmt.&lt;span style=&#34;color:#00a000&#34;&gt;Println&lt;/span&gt;(r.Form)  &lt;span style=&#34;color:#080;font-style:italic&#34;&gt;//这些信息是输出到服务器端的打印信息&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;fmt.&lt;span style=&#34;color:#00a000&#34;&gt;Println&lt;/span&gt;(&lt;span style=&#34;color:#b44&#34;&gt;&amp;#34;path&amp;#34;&lt;/span&gt;, r.URL.Path)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;fmt.&lt;span style=&#34;color:#00a000&#34;&gt;Println&lt;/span&gt;(&lt;span style=&#34;color:#b44&#34;&gt;&amp;#34;scheme&amp;#34;&lt;/span&gt;, r.URL.Scheme)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;fmt.&lt;span style=&#34;color:#00a000&#34;&gt;Println&lt;/span&gt;(r.Form[&lt;span style=&#34;color:#b44&#34;&gt;&amp;#34;url_long&amp;#34;&lt;/span&gt;])&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&lt;span style=&#34;color:#a2f;font-weight:bold&#34;&gt;for&lt;/span&gt; k, v &lt;span style=&#34;color:#666&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#a2f;font-weight:bold&#34;&gt;range&lt;/span&gt; r.Form {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&#x9;fmt.&lt;span style=&#34;color:#00a000&#34;&gt;Println&lt;/span&gt;(&lt;span style=&#34;color:#b44&#34;&gt;&amp;#34;key:&amp;#34;&lt;/span&gt;, k)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&#x9;fmt.&lt;span style=&#34;color:#00a000&#34;&gt;Println&lt;/span&gt;(&lt;span style=&#34;color:#b44&#34;&gt;&amp;#34;val:&amp;#34;&lt;/span&gt;, strings.&lt;span style=&#34;color:#00a000&#34;&gt;Join&lt;/span&gt;(v, &lt;span style=&#34;color:#b44&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;))&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;fmt.&lt;span style=&#34;color:#00a000&#34;&gt;Fprintf&lt;/span&gt;(w, &lt;span style=&#34;color:#b44&#34;&gt;&amp;#34;Hello astaxie!&amp;#34;&lt;/span&gt;) &lt;span style=&#34;color:#080;font-style:italic&#34;&gt;//这个写入到w的是输出到客户端的&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a2f;font-weight:bold&#34;&gt;func&lt;/span&gt; &lt;span style=&#34;color:#00a000&#34;&gt;main&lt;/span&gt;() {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;http.&lt;span style=&#34;color:#00a000&#34;&gt;HandleFunc&lt;/span&gt;(&lt;span style=&#34;color:#b44&#34;&gt;&amp;#34;/&amp;#34;&lt;/span&gt;, sayhelloName) &lt;span style=&#34;color:#080;font-style:italic&#34;&gt;//设置访问的路由&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;err &lt;span style=&#34;color:#666&#34;&gt;:=&lt;/span&gt; http.&lt;span style=&#34;color:#00a000&#34;&gt;ListenAndServe&lt;/span&gt;(&lt;span style=&#34;color:#b44&#34;&gt;&amp;#34;:9090&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#a2f;font-weight:bold&#34;&gt;nil&lt;/span&gt;) &lt;span style=&#34;color:#080;font-style:italic&#34;&gt;//设置监听的端口&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&lt;span style=&#34;color:#a2f;font-weight:bold&#34;&gt;if&lt;/span&gt; err &lt;span style=&#34;color:#666&#34;&gt;!=&lt;/span&gt; &lt;span style=&#34;color:#a2f;font-weight:bold&#34;&gt;nil&lt;/span&gt; {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&#x9;log.&lt;span style=&#34;color:#00a000&#34;&gt;Fatal&lt;/span&gt;(&lt;span style=&#34;color:#b44&#34;&gt;&amp;#34;ListenAndServe: &amp;#34;&lt;/span&gt;, err)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;代码解析&#34;&gt;代码解析&lt;/h2&gt;&#xA;&lt;p&gt;&lt;em&gt;package main&lt;/em&gt; 表示的是包名，需要在文件的第一行声明，package main这个包名表示go程序是一个可独立运行的程序，每一个go程序都应当有一个main为名称的包。&#xA;&lt;em&gt;import&lt;/em&gt; 导入需要使用到的类库，这里和python已经java都类似。其中fmt——Formatting包含了一些格式化的IO操作。&#xA;&lt;em&gt;func sayhelloName&lt;/em&gt; 在go当中，函数使用func声明，后面跟函数名，然后是参数，go当中声明一个变量的类型的时候会把类型写在后面比如&lt;code&gt;var a int&lt;/code&gt;。sayhelloName这个函数，w的数据类型是http.ResponseWriter，用于响应http。r是一个http.Request指针，用于接受请求。&#xA;&lt;em&gt;main&lt;/em&gt; main()函数 其中http.HandleFunc用于处理路由，ListenAndServer用来监听请求。&#xA;&lt;em&gt;log&lt;/em&gt; log主要用来在命令行状态下输出日志&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

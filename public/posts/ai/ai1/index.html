@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="PPmoon&#39;s Blog"
+  />
+  
+    
+      <title>2025人工智能漫谈（一） | PPmoon&#39;s Blog</title>
+    
+  
+  <link rel="stylesheet" href="/css/reset.css"/>
+  <link rel="stylesheet" href="/css/smigle.css"/>
+  
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+  <body>
+    <header>
+  <div id="brand">
+    <div>
+      <a href="https://ppmoon.github.io/"><h1>PPmoon&#39;s Blog</h1></a>
+    </div>
+  </div>
+  <nav>
+    
+      
+        
+        <a href="/"><b>Home</b></a>
+      
+         | 
+        <a href="/about/"><b>About</b></a>
+      
+         | 
+        <a href="/posts/"><b>Posts</b></a>
+      
+         | 
+        <a href="/categories/"><b>Categories</b></a>
+      
+         | 
+        <a href="/tags/"><b>Tags</b></a>
+      
+    
+  </nav>
+  <hr />
+</header>
+
+    <div id="content">
+      
+  <main>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+    <article>
+      <h1>2025人工智能漫谈（一）</h1>
+      <div class="post-meta">
+  <strong>
+    <span>Posted on</span>
+    <time>2025-03-14</time>
+    <span>in</span>
+    
+      <a href="/categories/ai">ai</a>
+  </strong>
+  <span> • 1499 words</span>
+  <span> • 3 minute read</span>
+  
+  
+    <div>
+      <span>Tags:</span>
+      
+        <a href="/tags/ai">ai</a>
+    </div>
+  
+</div>
+
+      <div><h1 id="2025人工智能漫谈一">2025人工智能漫谈（一）</h1>
+<h2 id="什么是智能">什么是智能？</h2>
+<p>2016年，我在网上看了一门人工智能的公开课。课程中的老教授提出了这个问题——什么是智能？
+计算器可以对数字进行加减乘除的计算。通过按键可以得出1+1=2的结论。这种机器是否算作具备智能？
+甚至有一些高级的科学计算器还有进行微积分运算，对函数求导。这种科学计算器是否算作具备智能？
+在2025年的今天，大量现代化的汽车装配了自适应巡航软件，这种软件不仅可以让汽车沿着车道线直线行驶，甚至在弯道处可以自行转弯。这种具备自适应巡航的软件又是否可以称之为智能呢？
+我的看法是，上述这些工具，无论是计算器还是支持自适应巡航的汽车都无法看起来像人一样那么聪明灵活，可以随机应变。直到ChatGPT的出现，他利用transform算法，通过堆模型参数制作的大语言模型使电脑软件可以像人一样涌现了智能。
+这种智能是全方位的，他可以回答人类的提问、做数学题、写代码。让人类觉得，我们好像真的在和一个真人交谈一样。那以ChatGPT为代表的大语言模型就真的称得上是具备智能吗？</p>
+<h2 id="大语言模型的原理">大语言模型的原理</h2>
+<p>我想摒弃技术细节，尽量以通俗易懂的方式介绍大语言模型智能涌现的原理。在讲解之前，我们需要先简单回顾一些生物知识。</p>
+<h3 id="大脑是如何工作的">大脑是如何工作的？</h3>
+<p>人类的大脑由860亿个神经元组成，通过电化学信号的方式传递信息。当人类看到图像、听到声音。感受到温度的时候这些信息转化成了电化学信号，这些信号通过由神经元组成的神经网络后人类最终会产生对外部刺激的反应。人们可以阅读、写字、交谈。都是外部信息通过大脑神经网络以后产生的结果反馈。</p>
+<h3 id="大语言模型是如何工作的">大语言模型是如何工作的？</h3>
+<p>既然人脑通过神经元组成的神经网络可以对外界刺激产生反应。如果我们可以找到一种方法，通过计算机模拟这个神经网络是否我们就可以让计算机软件像人类一样可以具备智能？答案是肯定的，类似ChatGPT的大语言模型，就是建立在神经网络模型之上的。</p>
+<p>人类学习一门知识的时候，通过反复的练习，外界刺激的信息不停的流经大脑的神经网络，由此人类可以学会游泳、数学、物理等知识。利用计算机模拟的神经网络也是一样的。以整个互联网的语料为信息，通过一些自然语言处理的技术，让计算机模拟的神经网络学会这些知识。</p>
+<p>大语言模型当中每一个神经元的节点存储了不同的人类词汇，这些词汇被神经网络串联。神经元之间的连线，我们称之为边，这个边上标记了一个概率，从神经元A跳转到神经元B的概率。假设神经元A关联了神经元B和神经元C。则由这些概率来决定，神经元A应该和神经元B一同输出结果。还是和神经元C一同输出结果。由此我们就实现了让大语言模型回答我们问题的能力。
+<img src="https://images.zheteng.tech/neural-network-diagram-expanded.svg" alt="image">
+让我们举个例子来理解大语言模型的神经网络，也许这和大脑的原理不同。但是已经足够通过这种方式涌现智能。</p>
+<p>假设我们有一段问答对话</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>问：你是谁？
+</span></span><span style="display:flex;"><span>答：我是小明
+</span></span></code></pre></div><p>通过自然语言处理技术，我们可以将“你是谁？”分解成[&ldquo;你&rdquo;,&ldquo;是&rdquo;,&ldquo;谁&rdquo;,&quot;?&quot;]四个字符。当我们将“你是谁？”输入到大语言模型到时候。这4个字符分别代表x1~x4，通过概率计算我们可以确定唯一的一个H11这个神经元，H11内容是“我是小明”当中的“我”，大语言模型继续通过节点边所携带的概率进行推算，“我”的后面的节点值是“是”，“是”的后面的节点值是“小”，“小”的后面的节点值是“明”。最后将这些文字拼接在一起通过Y1输出，我们得到的答案就是“我是小明”。</p>
+<p>由此我们发现，虽然大语言模型可以像人一样回答我们的问题。涌现智能。但是追其根本，还是由概率来决定的。那这种概率决定结果的程序，我们可以称之为智能吗？</p>
+</div>
+    </article>
+    
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous"
+            onload="renderMathInElement(document.body);"></script>
+  </main>
+
+    </div>
+    <footer>
+  <hr />
+  
+    <p id="social">
+      Find me around the web:
+      <br />
+      
+        
+        <a href="https://github.com/ppmoon">GitHub</a>
+      
+    </p>
+  
+  <p class="copyright">
+    Copyright © 2025
+    <a href="https://ppmoon.github.io/"><strong>PPmoon</strong></a>.
+    This work is licensed under the
+    <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> license.
+  </p>
+  <p class="builtWith">
+    Built with
+    <a href="http://www.gohugo.io/">Hugo</a>,
+    using the theme pure,
+    which was influenced by the theme
+    <a href="https://gitlab.com/ian-s-mcb/smigle-hugo-theme">smigle</a>.
+  </p>
+</footer>
+
+  </body>
+</html>

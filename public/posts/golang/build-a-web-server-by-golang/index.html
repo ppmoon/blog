@@ -87,22 +87,22 @@
 </span></span><span style="display:flex;"><span>)
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#a2f;font-weight:bold">func</span> <span style="color:#00a000">sayhelloName</span>(w http.ResponseWriter, r <span style="color:#666">*</span>http.Request) {
-</span></span><span style="display:flex;"><span>	r.<span style="color:#00a000">ParseForm</span>()  <span style="color:#080;font-style:italic">//解析参数，默认是不会解析的
-</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic"></span>	fmt.<span style="color:#00a000">Println</span>(r.Form)  <span style="color:#080;font-style:italic">//这些信息是输出到服务器端的打印信息
-</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic"></span>	fmt.<span style="color:#00a000">Println</span>(<span style="color:#b44">&#34;path&#34;</span>, r.URL.Path)
+</span></span><span style="display:flex;"><span>	r.<span style="color:#00a000">ParseForm</span>()  <span style="color:#080;font-style:italic">//解析参数，默认是不会解析的</span>
+</span></span><span style="display:flex;"><span>	fmt.<span style="color:#00a000">Println</span>(r.Form)  <span style="color:#080;font-style:italic">//这些信息是输出到服务器端的打印信息</span>
+</span></span><span style="display:flex;"><span>	fmt.<span style="color:#00a000">Println</span>(<span style="color:#b44">&#34;path&#34;</span>, r.URL.Path)
 </span></span><span style="display:flex;"><span>	fmt.<span style="color:#00a000">Println</span>(<span style="color:#b44">&#34;scheme&#34;</span>, r.URL.Scheme)
 </span></span><span style="display:flex;"><span>	fmt.<span style="color:#00a000">Println</span>(r.Form[<span style="color:#b44">&#34;url_long&#34;</span>])
 </span></span><span style="display:flex;"><span>	<span style="color:#a2f;font-weight:bold">for</span> k, v <span style="color:#666">:=</span> <span style="color:#a2f;font-weight:bold">range</span> r.Form {
 </span></span><span style="display:flex;"><span>		fmt.<span style="color:#00a000">Println</span>(<span style="color:#b44">&#34;key:&#34;</span>, k)
 </span></span><span style="display:flex;"><span>		fmt.<span style="color:#00a000">Println</span>(<span style="color:#b44">&#34;val:&#34;</span>, strings.<span style="color:#00a000">Join</span>(v, <span style="color:#b44">&#34;&#34;</span>))
 </span></span><span style="display:flex;"><span>	}
-</span></span><span style="display:flex;"><span>	fmt.<span style="color:#00a000">Fprintf</span>(w, <span style="color:#b44">&#34;Hello astaxie!&#34;</span>) <span style="color:#080;font-style:italic">//这个写入到w的是输出到客户端的
-</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic"></span>}
+</span></span><span style="display:flex;"><span>	fmt.<span style="color:#00a000">Fprintf</span>(w, <span style="color:#b44">&#34;Hello astaxie!&#34;</span>) <span style="color:#080;font-style:italic">//这个写入到w的是输出到客户端的</span>
+</span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#a2f;font-weight:bold">func</span> <span style="color:#00a000">main</span>() {
-</span></span><span style="display:flex;"><span>	http.<span style="color:#00a000">HandleFunc</span>(<span style="color:#b44">&#34;/&#34;</span>, sayhelloName) <span style="color:#080;font-style:italic">//设置访问的路由
-</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic"></span>	err <span style="color:#666">:=</span> http.<span style="color:#00a000">ListenAndServe</span>(<span style="color:#b44">&#34;:9090&#34;</span>, <span style="color:#a2f;font-weight:bold">nil</span>) <span style="color:#080;font-style:italic">//设置监听的端口
-</span></span></span><span style="display:flex;"><span><span style="color:#080;font-style:italic"></span>	<span style="color:#a2f;font-weight:bold">if</span> err <span style="color:#666">!=</span> <span style="color:#a2f;font-weight:bold">nil</span> {
+</span></span><span style="display:flex;"><span>	http.<span style="color:#00a000">HandleFunc</span>(<span style="color:#b44">&#34;/&#34;</span>, sayhelloName) <span style="color:#080;font-style:italic">//设置访问的路由</span>
+</span></span><span style="display:flex;"><span>	err <span style="color:#666">:=</span> http.<span style="color:#00a000">ListenAndServe</span>(<span style="color:#b44">&#34;:9090&#34;</span>, <span style="color:#a2f;font-weight:bold">nil</span>) <span style="color:#080;font-style:italic">//设置监听的端口</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#a2f;font-weight:bold">if</span> err <span style="color:#666">!=</span> <span style="color:#a2f;font-weight:bold">nil</span> {
 </span></span><span style="display:flex;"><span>		log.<span style="color:#00a000">Fatal</span>(<span style="color:#b44">&#34;ListenAndServe: &#34;</span>, err)
 </span></span><span style="display:flex;"><span>	}
 </span></span><span style="display:flex;"><span>}
@@ -140,7 +140,7 @@
     </p>
   
   <p class="copyright">
-    Copyright © 2023
+    Copyright © 2025
     <a href="https://ppmoon.github.io/"><strong>PPmoon</strong></a>.
     This work is licensed under the
     <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> license.

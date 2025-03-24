@@ -1,29 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>nas on PPmoon&#39;s Blog</title>
+    <title>Nas on PPmoon&#39;s Blog</title>
     <link>https://ppmoon.github.io/tags/nas/</link>
-    <description>Recent content in nas on PPmoon&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Nas on PPmoon&#39;s Blog</description>
+    <generator>Hugo</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 17 Sep 2019 20:00:00 +0800</lastBuildDate><atom:link href="https://ppmoon.github.io/tags/nas/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 17 Sep 2019 20:00:00 +0800</lastBuildDate>
+    <atom:link href="https://ppmoon.github.io/tags/nas/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>群晖NAS如何调整LED指示灯的亮度</title>
       <link>https://ppmoon.github.io/posts/nas/how-to-adjust-the-led-indicator-light-brightness/</link>
       <pubDate>Tue, 17 Sep 2019 20:00:00 +0800</pubDate>
-      
       <guid>https://ppmoon.github.io/posts/nas/how-to-adjust-the-led-indicator-light-brightness/</guid>
-      <description>群辉NAS如何调整LED指示灯的亮度 NAS放在家里灯光太亮，影响夜间休息。那如何降低NAS前置面板的LED灯的亮度呢？ 登录群辉的DSM系统。</description>
+      <description>&lt;h1 id=&#34;群辉nas如何调整led指示灯的亮度&#34;&gt;群辉NAS如何调整LED指示灯的亮度&lt;/h1&gt;&#xA;&lt;p&gt;NAS放在家里灯光太亮，影响夜间休息。那如何降低NAS前置面板的LED灯的亮度呢？&lt;/p&gt;&#xA;&lt;p&gt;登录群辉的DSM系统。&lt;/p&gt;&#xA;&lt;p&gt;点击控制面板，找到硬件与电源，调整LED亮度的控制杆，调节控制杆就可以调节亮度了。&#xA;&lt;img src=&#34;https://raw.githubusercontent.com/ppmoon/picbed/master/img/20190917200356.png&#34; alt=&#34;LED指示灯亮度&#34;&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>群晖NAS如何关机</title>
       <link>https://ppmoon.github.io/posts/nas/how-to-power-off-in-synology-nas/</link>
       <pubDate>Mon, 16 Sep 2019 20:00:00 +0800</pubDate>
-      
       <guid>https://ppmoon.github.io/posts/nas/how-to-power-off-in-synology-nas/</guid>
-      <description>群晖NAS如何关机？ 群辉NAS的关机按钮在DSM桌面任务栏右上。点击头像即可看到关机按钮。 关机的过程当中请保持电源通电。群晖DSM在关机的过</description>
+      <description>&lt;h1 id=&#34;群晖nas如何关机&#34;&gt;群晖NAS如何关机？&lt;/h1&gt;&#xA;&lt;p&gt;群辉NAS的关机按钮在DSM桌面任务栏右上。点击头像即可看到关机按钮。&#xA;&lt;img src=&#34;https://i.loli.net/2019/09/16/8T2WQn4IYjcCMfe.png&#34; alt=&#34;群晖NAS关机&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;关机的过程当中请保持电源通电。群晖DSM在关机的过程当中会安全的结束一些正在运行的任务保证安全关机。&#xA;关机过程当中群晖NAS前置面板的蓝色灯会闪烁，直到蓝灯不再闪烁群晖NAS才完成关机。这个时候就可以放心的拔掉电源啦。&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

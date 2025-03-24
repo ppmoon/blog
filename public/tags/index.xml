@@ -4,44 +4,44 @@
     <title>Tags on PPmoon&#39;s Blog</title>
     <link>https://ppmoon.github.io/tags/</link>
     <description>Recent content in Tags on PPmoon&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 11 Mar 2020 21:16:01 +0800</lastBuildDate><atom:link href="https://ppmoon.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 14 Mar 2025 23:00:00 +0800</lastBuildDate>
+    <atom:link href="https://ppmoon.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>golang</title>
+      <title>Ai</title>
+      <link>https://ppmoon.github.io/tags/ai/</link>
+      <pubDate>Fri, 14 Mar 2025 23:00:00 +0800</pubDate>
+      <guid>https://ppmoon.github.io/tags/ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Golang</title>
       <link>https://ppmoon.github.io/tags/golang/</link>
       <pubDate>Wed, 11 Mar 2020 21:16:01 +0800</pubDate>
-      
       <guid>https://ppmoon.github.io/tags/golang/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>nas</title>
+      <title>Nas</title>
       <link>https://ppmoon.github.io/tags/nas/</link>
       <pubDate>Tue, 17 Sep 2019 20:00:00 +0800</pubDate>
-      
       <guid>https://ppmoon.github.io/tags/nas/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>shell</title>
+      <title>Shell</title>
       <link>https://ppmoon.github.io/tags/shell/</link>
       <pubDate>Mon, 26 Aug 2019 14:00:00 +0800</pubDate>
-      
       <guid>https://ppmoon.github.io/tags/shell/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>mysql</title>
+      <title>Mysql</title>
       <link>https://ppmoon.github.io/tags/mysql/</link>
       <pubDate>Fri, 22 Mar 2019 17:30:54 +0800</pubDate>
-      
       <guid>https://ppmoon.github.io/tags/mysql/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

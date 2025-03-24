@@ -2,31 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://ppmoon.github.io/posts/ai/ai1/</loc>
+    <lastmod>2025-03-14T23:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://ppmoon.github.io/categories/ai/</loc>
+    <lastmod>2025-03-14T23:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://ppmoon.github.io/tags/ai/</loc>
+    <lastmod>2025-03-14T23:00:00+08:00</lastmod>
+  </url><url>
     <loc>https://ppmoon.github.io/categories/</loc>
+    <lastmod>2025-03-14T23:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://ppmoon.github.io/posts/</loc>
+    <lastmod>2025-03-14T23:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://ppmoon.github.io/</loc>
+    <lastmod>2025-03-14T23:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://ppmoon.github.io/tags/</loc>
+    <lastmod>2025-03-14T23:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://ppmoon.github.io/categories/golang/</loc>
     <lastmod>2020-03-11T21:16:01+08:00</lastmod>
   </url><url>
     <loc>https://ppmoon.github.io/tags/golang/</loc>
     <lastmod>2020-03-11T21:16:01+08:00</lastmod>
   </url><url>
-    <loc>https://ppmoon.github.io/categories/golang/</loc>
-    <lastmod>2020-03-11T21:16:01+08:00</lastmod>
-  </url><url>
     <loc>https://ppmoon.github.io/posts/golang/golang-output-log-to-file-and-console/</loc>
     <lastmod>2020-03-11T21:16:01+08:00</lastmod>
   </url><url>
-    <loc>https://ppmoon.github.io/posts/</loc>
-    <lastmod>2020-03-11T21:16:01+08:00</lastmod>
-  </url><url>
-    <loc>https://ppmoon.github.io/</loc>
-    <lastmod>2020-03-11T21:16:01+08:00</lastmod>
-  </url><url>
-    <loc>https://ppmoon.github.io/tags/</loc>
-    <lastmod>2020-03-11T21:16:01+08:00</lastmod>
-  </url><url>
-    <loc>https://ppmoon.github.io/tags/nas/</loc>
+    <loc>https://ppmoon.github.io/categories/nas/</loc>
     <lastmod>2019-09-17T20:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://ppmoon.github.io/categories/nas/</loc>
+    <loc>https://ppmoon.github.io/tags/nas/</loc>
     <lastmod>2019-09-17T20:00:00+08:00</lastmod>
   </url><url>
     <loc>https://ppmoon.github.io/posts/nas/how-to-adjust-the-led-indicator-light-brightness/</loc>
@@ -38,16 +47,16 @@
     <loc>https://ppmoon.github.io/posts/shell/mac-how-to-get-time-in-shell-script/</loc>
     <lastmod>2019-08-26T14:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://ppmoon.github.io/tags/shell/</loc>
-    <lastmod>2019-08-26T14:00:00+08:00</lastmod>
-  </url><url>
     <loc>https://ppmoon.github.io/categories/shell/</loc>
     <lastmod>2019-08-26T14:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://ppmoon.github.io/tags/mysql/</loc>
-    <lastmod>2019-03-22T17:30:54+08:00</lastmod>
+    <loc>https://ppmoon.github.io/tags/shell/</loc>
+    <lastmod>2019-08-26T14:00:00+08:00</lastmod>
   </url><url>
     <loc>https://ppmoon.github.io/categories/mysql/</loc>
+    <lastmod>2019-03-22T17:30:54+08:00</lastmod>
+  </url><url>
+    <loc>https://ppmoon.github.io/tags/mysql/</loc>
     <lastmod>2019-03-22T17:30:54+08:00</lastmod>
   </url><url>
     <loc>https://ppmoon.github.io/posts/mysql/talk-about-mysql-operation/</loc>

@@ -4,152 +4,128 @@
     <title>Posts on PPmoon&#39;s Blog</title>
     <link>https://ppmoon.github.io/posts/</link>
     <description>Recent content in Posts on PPmoon&#39;s Blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 11 Mar 2020 21:16:01 +0800</lastBuildDate><atom:link href="https://ppmoon.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 14 Mar 2025 23:00:00 +0800</lastBuildDate>
+    <atom:link href="https://ppmoon.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2025人工智能漫谈（一）</title>
+      <link>https://ppmoon.github.io/posts/ai/ai1/</link>
+      <pubDate>Fri, 14 Mar 2025 23:00:00 +0800</pubDate>
+      <guid>https://ppmoon.github.io/posts/ai/ai1/</guid>
+      <description>&lt;h1 id=&#34;2025人工智能漫谈一&#34;&gt;2025人工智能漫谈（一）&lt;/h1&gt;&#xA;&lt;h2 id=&#34;什么是智能&#34;&gt;什么是智能？&lt;/h2&gt;&#xA;&lt;p&gt;2016年，我在网上看了一门人工智能的公开课。课程中的老教授提出了这个问题——什么是智能？&#xA;计算器可以对数字进行加减乘除的计算。通过按键可以得出1+1=2的结论。这种机器是否算作具备智能？&#xA;甚至有一些高级的科学计算器还有进行微积分运算，对函数求导。这种科学计算器是否算作具备智能？&#xA;在2025年的今天，大量现代化的汽车装配了自适应巡航软件，这种软件不仅可以让汽车沿着车道线直线行驶，甚至在弯道处可以自行转弯。这种具备自适应巡航的软件又是否可以称之为智能呢？&#xA;我的看法是，上述这些工具，无论是计算器还是支持自适应巡航的汽车都无法看起来像人一样那么聪明灵活，可以随机应变。直到ChatGPT的出现，他利用transform算法，通过堆模型参数制作的大语言模型使电脑软件可以像人一样涌现了智能。&#xA;这种智能是全方位的，他可以回答人类的提问、做数学题、写代码。让人类觉得，我们好像真的在和一个真人交谈一样。那以ChatGPT为代表的大语言模型就真的称得上是具备智能吗？&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Golang将日志同时输出到控制台和文件</title>
       <link>https://ppmoon.github.io/posts/golang/golang-output-log-to-file-and-console/</link>
       <pubDate>Wed, 11 Mar 2020 21:16:01 +0800</pubDate>
-      
       <guid>https://ppmoon.github.io/posts/golang/golang-output-log-to-file-and-console/</guid>
-      <description>问题背景 日常开发当中需要将golang的log包打印的日志同时输出到控制台和文件，应该如何解决这个问题？ 解决思路 log包可以通过SetOut</description>
+      <description>&lt;h1 id=&#34;问题背景&#34;&gt;问题背景&lt;/h1&gt;&#xA;&lt;p&gt;日常开发当中需要将golang的log包打印的日志同时输出到控制台和文件，应该如何解决这个问题？&lt;/p&gt;&#xA;&lt;h1 id=&#34;解决思路&#34;&gt;解决思路&lt;/h1&gt;&#xA;&lt;p&gt;log包可以通过SetOutput()方法指定日志输出的方式（Writer），但是只能指定一个输出的方式（Writer）。我们利用io.MultiWriter()将多个Writer拼成一个Writer使用的特性，把log.Println()输出的内容分流到控制台和文件当中。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>群晖NAS如何调整LED指示灯的亮度</title>
       <link>https://ppmoon.github.io/posts/nas/how-to-adjust-the-led-indicator-light-brightness/</link>
       <pubDate>Tue, 17 Sep 2019 20:00:00 +0800</pubDate>
-      
       <guid>https://ppmoon.github.io/posts/nas/how-to-adjust-the-led-indicator-light-brightness/</guid>
-      <description>群辉NAS如何调整LED指示灯的亮度 NAS放在家里灯光太亮，影响夜间休息。那如何降低NAS前置面板的LED灯的亮度呢？ 登录群辉的DSM系统。</description>
+      <description>&lt;h1 id=&#34;群辉nas如何调整led指示灯的亮度&#34;&gt;群辉NAS如何调整LED指示灯的亮度&lt;/h1&gt;&#xA;&lt;p&gt;NAS放在家里灯光太亮，影响夜间休息。那如何降低NAS前置面板的LED灯的亮度呢？&lt;/p&gt;&#xA;&lt;p&gt;登录群辉的DSM系统。&lt;/p&gt;&#xA;&lt;p&gt;点击控制面板，找到硬件与电源，调整LED亮度的控制杆，调节控制杆就可以调节亮度了。&#xA;&lt;img src=&#34;https://raw.githubusercontent.com/ppmoon/picbed/master/img/20190917200356.png&#34; alt=&#34;LED指示灯亮度&#34;&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>群晖NAS如何关机</title>
       <link>https://ppmoon.github.io/posts/nas/how-to-power-off-in-synology-nas/</link>
       <pubDate>Mon, 16 Sep 2019 20:00:00 +0800</pubDate>
-      
       <guid>https://ppmoon.github.io/posts/nas/how-to-power-off-in-synology-nas/</guid>
-      <description>群晖NAS如何关机？ 群辉NAS的关机按钮在DSM桌面任务栏右上。点击头像即可看到关机按钮。 关机的过程当中请保持电源通电。群晖DSM在关机的过</description>
+      <description>&lt;h1 id=&#34;群晖nas如何关机&#34;&gt;群晖NAS如何关机？&lt;/h1&gt;&#xA;&lt;p&gt;群辉NAS的关机按钮在DSM桌面任务栏右上。点击头像即可看到关机按钮。&#xA;&lt;img src=&#34;https://i.loli.net/2019/09/16/8T2WQn4IYjcCMfe.png&#34; alt=&#34;群晖NAS关机&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;关机的过程当中请保持电源通电。群晖DSM在关机的过程当中会安全的结束一些正在运行的任务保证安全关机。&#xA;关机过程当中群晖NAS前置面板的蓝色灯会闪烁，直到蓝灯不再闪烁群晖NAS才完成关机。这个时候就可以放心的拔掉电源啦。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Mac如何在shell脚本当中获取时间</title>
       <link>https://ppmoon.github.io/posts/shell/mac-how-to-get-time-in-shell-script/</link>
       <pubDate>Mon, 26 Aug 2019 14:00:00 +0800</pubDate>
-      
       <guid>https://ppmoon.github.io/posts/shell/mac-how-to-get-time-in-shell-script/</guid>
-      <description>Mac如何在shell脚本当中获取时间 获取今天的时间 date 2019年 8月26日 星期一 14时02分23秒 CST 直接输入date就可以获取当前的时间（C</description>
+      <description>&lt;h1 id=&#34;mac如何在shell脚本当中获取时间&#34;&gt;Mac如何在shell脚本当中获取时间&lt;/h1&gt;&#xA;&lt;h2 id=&#34;获取今天的时间&#34;&gt;获取今天的时间&lt;/h2&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;date&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;2019年 8月26日 星期一 14时02分23秒 CST&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;直接输入date就可以获取当前的时间（CST时间）&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;date -jnRu&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Mon, &lt;span style=&#34;color:#666&#34;&gt;26&lt;/span&gt; Aug &lt;span style=&#34;color:#666&#34;&gt;2019&lt;/span&gt; 06:06:29 +0000&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;如果加上参数&lt;code&gt;-jnRu&lt;/code&gt;会显示格林威治时间(GMT)&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Mysql基本操作</title>
       <link>https://ppmoon.github.io/posts/mysql/talk-about-mysql-operation/</link>
       <pubDate>Fri, 22 Mar 2019 17:30:54 +0800</pubDate>
-      
       <guid>https://ppmoon.github.io/posts/mysql/talk-about-mysql-operation/</guid>
-      <description>在开始讨论Mysql的基本操作之前我们需要先明确主体，即我们操作的是什么？下面我们忽略一些具体细节来了解一下Mysql这款数据库管理数据的结</description>
+      <description>&lt;p&gt;在开始讨论Mysql的基本操作之前我们需要先明确主体，即我们操作的是什么？下面我们忽略一些具体细节来了解一下Mysql这款数据库管理数据的结构和单元。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>学习如何使用mysql的手册</title>
       <link>https://ppmoon.github.io/posts/mysql/learn-how-to-read-mysql-manual/</link>
       <pubDate>Wed, 20 Mar 2019 19:44:01 +0800</pubDate>
-      
       <guid>https://ppmoon.github.io/posts/mysql/learn-how-to-read-mysql-manual/</guid>
-      <description>mysql不同的版本会有不同的语法特性，如何才能知道当前版本的语法是什么样子的呢？最好的办法就是查看mysql的帮助手册。 查看mysql的手</description>
+      <description>&lt;p&gt;mysql不同的版本会有不同的语法特性，如何才能知道当前版本的语法是什么样子的呢？最好的办法就是查看mysql的帮助手册。&lt;/p&gt;&#xA;&lt;p&gt;查看mysql的手册只需要一个问号 + 关键词 就可以了：&#xA;比如我要查看show命令的使用说明可以直接在mysql的控制台输入 ? show&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>golang复用http-request-body</title>
       <link>https://ppmoon.github.io/posts/golang/golang-reuse-http-request-body/</link>
       <pubDate>Sat, 20 Oct 2018 15:10:01 +0800</pubDate>
-      
       <guid>https://ppmoon.github.io/posts/golang/golang-reuse-http-request-body/</guid>
-      <description>问题及场景 业务当中有需要分发http.request.body的场景。比如微信回调消息只能指定一个地址，所以期望可以复制一份消息发给其他服务</description>
+      <description>&lt;h2 id=&#34;问题及场景&#34;&gt;问题及场景&lt;/h2&gt;&#xA;&lt;p&gt;业务当中有需要分发http.request.body的场景。比如微信回调消息只能指定一个地址，所以期望可以复制一份消息发给其他服务。由服务B和接收微信回调的服务A一起处理微信回调信息。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>golang-uint类型如何转换成string</title>
       <link>https://ppmoon.github.io/posts/golang/golang-uint-cover-to-string/</link>
       <pubDate>Sat, 28 Apr 2018 21:18:01 +0800</pubDate>
-      
       <guid>https://ppmoon.github.io/posts/golang/golang-uint-cover-to-string/</guid>
-      <description>问题golang uint类型如何转换成string 这里值得注意的地方时，本文说的不是uint8，uint64就是uint类型。 解决方法 var a uint</description>
+      <description>&lt;h2 id=&#34;问题golang-uint类型如何转换成string&#34;&gt;问题golang uint类型如何转换成string&lt;/h2&gt;&#xA;&lt;p&gt;这里值得注意的地方时，本文说的不是uint8，uint64就是uint类型。&lt;/p&gt;&#xA;&lt;h2 id=&#34;解决方法&#34;&gt;解决方法&lt;/h2&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-gdscript3&#34; data-lang=&#34;gdscript3&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a2f;font-weight:bold&#34;&gt;var&lt;/span&gt; a uint &lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#666&#34;&gt;1&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;b :&lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt; strconv&lt;span style=&#34;color:#666&#34;&gt;.&lt;/span&gt;Itoa(&lt;span style=&#34;color:#d2413a;font-weight:bold&#34;&gt;int&lt;/span&gt;(a))&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;c :&lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt; string(b)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;d :&lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt; string(a)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;fmt&lt;span style=&#34;color:#666&#34;&gt;.&lt;/span&gt;Println(c)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;使用strconv的Itoa方法先将uint转换成int类型，再将int类型转换成string。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>国内go如何下载golang-org的包</title>
       <link>https://ppmoon.github.io/posts/golang/how-to-download-golang-org-package/</link>
       <pubDate>Wed, 25 Apr 2018 12:14:01 +0800</pubDate>
-      
       <guid>https://ppmoon.github.io/posts/golang/how-to-download-golang-org-package/</guid>
-      <description>如何下载golang.org的包？ 由于墙的原因，golang.org这个域名下的资源是无法访问的。我们无法下载golang.org上面的包，</description>
+      <description>&lt;h1 id=&#34;如何下载golangorg的包&#34;&gt;如何下载golang.org的包？&lt;/h1&gt;&#xA;&lt;p&gt;由于墙的原因，golang.org这个域名下的资源是无法访问的。我们无法下载golang.org上面的包，好在golang的包都管理在github所以我们可以访问github来下载golang.org的包。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>go如何编写命令行(cli)程序</title>
       <link>https://ppmoon.github.io/posts/golang/how-to-write-a-cli-program-by-go/</link>
       <pubDate>Mon, 19 Feb 2018 11:13:01 +0800</pubDate>
-      
       <guid>https://ppmoon.github.io/posts/golang/how-to-write-a-cli-program-by-go/</guid>
-      <description>创建一个命令行程序 问题 如何使用golang创建可以在命令行当中传递参数的程序？go程序如何带参数执行？ 比如我们期望使用hello -versi</description>
+      <description>&lt;h1 id=&#34;创建一个命令行程序&#34;&gt;创建一个命令行程序&lt;/h1&gt;&#xA;&lt;h2 id=&#34;问题&#34;&gt;问题&lt;/h2&gt;&#xA;&lt;p&gt;如何使用golang创建可以在命令行当中传递参数的程序？go程序如何带参数执行？&lt;/p&gt;&#xA;&lt;p&gt;比如我们期望使用&lt;em&gt;hello -version&lt;/em&gt;来查看hello程序的版本号码。或者输入&lt;em&gt;hello language chinese&lt;/em&gt; 来切换hello程序的语言版本。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>go如何进行交叉编译</title>
       <link>https://ppmoon.github.io/posts/golang/golang-cross-compile/</link>
       <pubDate>Fri, 16 Feb 2018 14:44:01 +0800</pubDate>
-      
       <guid>https://ppmoon.github.io/posts/golang/golang-cross-compile/</guid>
-      <description>golang交叉编译 问题 golang如何在一个平台编译另外一个平台可以执行的文件。比如在mac上编译Windows和linux可以执行的文件</description>
+      <description>&lt;h1 id=&#34;golang交叉编译&#34;&gt;golang交叉编译&lt;/h1&gt;&#xA;&lt;h2 id=&#34;问题&#34;&gt;问题&lt;/h2&gt;&#xA;&lt;p&gt;golang如何在一个平台编译另外一个平台可以执行的文件。比如在mac上编译Windows和linux可以执行的文件。那么我们的问题就设定成：如何在mac上编译64位linux的可执行文件。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>SQL的IN操作符</title>
       <link>https://ppmoon.github.io/posts/mysql/sql-operation-in/</link>
       <pubDate>Wed, 30 Aug 2017 23:00:01 +0800</pubDate>
-      
       <guid>https://ppmoon.github.io/posts/mysql/sql-operation-in/</guid>
-      <description>IN操作符 IN操作符允许我们在WHERE子句中规定多个值。 这个操作符可以让我们在表中选取有一定规律的特定值，比如多个同样的订单选取最新的一个</description>
+      <description>&lt;h2 id=&#34;in操作符&#34;&gt;IN操作符&lt;/h2&gt;&#xA;&lt;p&gt;IN操作符允许我们在WHERE子句中规定多个值。&#xA;这个操作符可以让我们在表中选取有一定规律的特定值，比如多个同样的订单选取最新的一个。&lt;/p&gt;&#xA;&lt;p&gt;SQL IN 语法&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a2f;font-weight:bold&#34;&gt;SELECT&lt;/span&gt;&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;&lt;span style=&#34;&#34;&gt;列名&lt;/span&gt;&lt;span style=&#34;color:#bbb&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#bbb&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#a2f;font-weight:bold&#34;&gt;FROM&lt;/span&gt;&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;&lt;span style=&#34;&#34;&gt;表明&lt;/span&gt;&lt;span style=&#34;color:#bbb&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#bbb&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#a2f;font-weight:bold&#34;&gt;WHERE&lt;/span&gt;&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;&lt;span style=&#34;&#34;&gt;列名&lt;/span&gt;&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#a2f;font-weight:bold&#34;&gt;IN&lt;/span&gt;&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;(value1,value2,...)&lt;span style=&#34;color:#bbb&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;例子&#34;&gt;例子&lt;/h2&gt;&#xA;&lt;p&gt;简单的例子网上有，这里说一个复杂点的例子&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Go编写一个简单的web服务器</title>
       <link>https://ppmoon.github.io/posts/golang/build-a-web-server-by-golang/</link>
       <pubDate>Wed, 19 Apr 2017 01:27:01 +0800</pubDate>
-      
       <guid>https://ppmoon.github.io/posts/golang/build-a-web-server-by-golang/</guid>
-      <description>Go是一款静态里语言，特点就是拥有极好的并发编程体验。下面是使用Go实现的一个并发，非阻塞的web服务器。 代码 package main import ( &amp;#34;fmt&amp;#34; &amp;#34;net/http&amp;#34; &amp;#34;strings&amp;#34; &amp;#34;log&amp;#34; ) func sayhelloName(w http.ResponseWriter, r *http.Request) {</description>
+      <description>&lt;p&gt;Go是一款静态里语言，特点就是拥有极好的并发编程体验。下面是使用Go实现的一个并发，非阻塞的web服务器。&lt;/p&gt;&#xA;&lt;h2 id=&#34;代码&#34;&gt;代码&lt;/h2&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-golang&#34; data-lang=&#34;golang&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a2f;font-weight:bold&#34;&gt;package&lt;/span&gt; main&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a2f;font-weight:bold&#34;&gt;import&lt;/span&gt; (&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&lt;span style=&#34;color:#b44&#34;&gt;&amp;#34;fmt&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&lt;span style=&#34;color:#b44&#34;&gt;&amp;#34;net/http&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&lt;span style=&#34;color:#b44&#34;&gt;&amp;#34;strings&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&lt;span style=&#34;color:#b44&#34;&gt;&amp;#34;log&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a2f;font-weight:bold&#34;&gt;func&lt;/span&gt; &lt;span style=&#34;color:#00a000&#34;&gt;sayhelloName&lt;/span&gt;(w http.ResponseWriter, r &lt;span style=&#34;color:#666&#34;&gt;*&lt;/span&gt;http.Request) {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;r.&lt;span style=&#34;color:#00a000&#34;&gt;ParseForm&lt;/span&gt;()  &lt;span style=&#34;color:#080;font-style:italic&#34;&gt;//解析参数，默认是不会解析的&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;fmt.&lt;span style=&#34;color:#00a000&#34;&gt;Println&lt;/span&gt;(r.Form)  &lt;span style=&#34;color:#080;font-style:italic&#34;&gt;//这些信息是输出到服务器端的打印信息&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;fmt.&lt;span style=&#34;color:#00a000&#34;&gt;Println&lt;/span&gt;(&lt;span style=&#34;color:#b44&#34;&gt;&amp;#34;path&amp;#34;&lt;/span&gt;, r.URL.Path)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;fmt.&lt;span style=&#34;color:#00a000&#34;&gt;Println&lt;/span&gt;(&lt;span style=&#34;color:#b44&#34;&gt;&amp;#34;scheme&amp;#34;&lt;/span&gt;, r.URL.Scheme)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;fmt.&lt;span style=&#34;color:#00a000&#34;&gt;Println&lt;/span&gt;(r.Form[&lt;span style=&#34;color:#b44&#34;&gt;&amp;#34;url_long&amp;#34;&lt;/span&gt;])&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&lt;span style=&#34;color:#a2f;font-weight:bold&#34;&gt;for&lt;/span&gt; k, v &lt;span style=&#34;color:#666&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#a2f;font-weight:bold&#34;&gt;range&lt;/span&gt; r.Form {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&#x9;fmt.&lt;span style=&#34;color:#00a000&#34;&gt;Println&lt;/span&gt;(&lt;span style=&#34;color:#b44&#34;&gt;&amp;#34;key:&amp;#34;&lt;/span&gt;, k)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&#x9;fmt.&lt;span style=&#34;color:#00a000&#34;&gt;Println&lt;/span&gt;(&lt;span style=&#34;color:#b44&#34;&gt;&amp;#34;val:&amp;#34;&lt;/span&gt;, strings.&lt;span style=&#34;color:#00a000&#34;&gt;Join&lt;/span&gt;(v, &lt;span style=&#34;color:#b44&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;))&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;fmt.&lt;span style=&#34;color:#00a000&#34;&gt;Fprintf&lt;/span&gt;(w, &lt;span style=&#34;color:#b44&#34;&gt;&amp;#34;Hello astaxie!&amp;#34;&lt;/span&gt;) &lt;span style=&#34;color:#080;font-style:italic&#34;&gt;//这个写入到w的是输出到客户端的&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a2f;font-weight:bold&#34;&gt;func&lt;/span&gt; &lt;span style=&#34;color:#00a000&#34;&gt;main&lt;/span&gt;() {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;http.&lt;span style=&#34;color:#00a000&#34;&gt;HandleFunc&lt;/span&gt;(&lt;span style=&#34;color:#b44&#34;&gt;&amp;#34;/&amp;#34;&lt;/span&gt;, sayhelloName) &lt;span style=&#34;color:#080;font-style:italic&#34;&gt;//设置访问的路由&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;err &lt;span style=&#34;color:#666&#34;&gt;:=&lt;/span&gt; http.&lt;span style=&#34;color:#00a000&#34;&gt;ListenAndServe&lt;/span&gt;(&lt;span style=&#34;color:#b44&#34;&gt;&amp;#34;:9090&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#a2f;font-weight:bold&#34;&gt;nil&lt;/span&gt;) &lt;span style=&#34;color:#080;font-style:italic&#34;&gt;//设置监听的端口&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&lt;span style=&#34;color:#a2f;font-weight:bold&#34;&gt;if&lt;/span&gt; err &lt;span style=&#34;color:#666&#34;&gt;!=&lt;/span&gt; &lt;span style=&#34;color:#a2f;font-weight:bold&#34;&gt;nil&lt;/span&gt; {&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;&#x9;log.&lt;span style=&#34;color:#00a000&#34;&gt;Fatal&lt;/span&gt;(&lt;span style=&#34;color:#b44&#34;&gt;&amp;#34;ListenAndServe: &amp;#34;&lt;/span&gt;, err)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#x9;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;代码解析&#34;&gt;代码解析&lt;/h2&gt;&#xA;&lt;p&gt;&lt;em&gt;package main&lt;/em&gt; 表示的是包名，需要在文件的第一行声明，package main这个包名表示go程序是一个可独立运行的程序，每一个go程序都应当有一个main为名称的包。&#xA;&lt;em&gt;import&lt;/em&gt; 导入需要使用到的类库，这里和python已经java都类似。其中fmt——Formatting包含了一些格式化的IO操作。&#xA;&lt;em&gt;func sayhelloName&lt;/em&gt; 在go当中，函数使用func声明，后面跟函数名，然后是参数，go当中声明一个变量的类型的时候会把类型写在后面比如&lt;code&gt;var a int&lt;/code&gt;。sayhelloName这个函数，w的数据类型是http.ResponseWriter，用于响应http。r是一个http.Request指针，用于接受请求。&#xA;&lt;em&gt;main&lt;/em&gt; main()函数 其中http.HandleFunc用于处理路由，ListenAndServer用来监听请求。&#xA;&lt;em&gt;log&lt;/em&gt; log主要用来在命令行状态下输出日志&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>mysql修改字段名称</title>
       <link>https://ppmoon.github.io/posts/mysql/mysql-change-column-name/</link>
       <pubDate>Fri, 15 Apr 2016 22:00:01 +0800</pubDate>
-      
       <guid>https://ppmoon.github.io/posts/mysql/mysql-change-column-name/</guid>
-      <description>在mysql当中如果字段创建以后想修改名字怎么办？ alter table 表名 change 旧字段名 新字段名 字段属性; 举个例子： 修改users表的name字段为userna</description>
+      <description>&lt;h1 id=&#34;在mysql当中如果字段创建以后想修改名字怎么办&#34;&gt;在mysql当中如果字段创建以后想修改名字怎么办？&lt;/h1&gt;&#xA;&lt;p&gt;alter table 表名 change 旧字段名 新字段名 字段属性;&#xA;举个例子：&lt;/p&gt;&#xA;&lt;p&gt;修改users表的name字段为username&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a2f;font-weight:bold&#34;&gt;alter&lt;/span&gt;&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#a2f;font-weight:bold&#34;&gt;table&lt;/span&gt;&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;users&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;change&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;name&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;username&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#a2f&#34;&gt;varchar&lt;/span&gt;(&lt;span style=&#34;color:#666&#34;&gt;25&lt;/span&gt;);&lt;span style=&#34;color:#bbb&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;个人觉得这个change的方法是销毁掉原来的字段再在原来的地方常见新字段的方法来更换字段名称。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>mysql ERROR 1820 (HY000)解决办法</title>
       <link>https://ppmoon.github.io/posts/mysql/mysql-error-1820-hy000-solution/</link>
       <pubDate>Mon, 01 Feb 2016 19:44:01 +0800</pubDate>
-      
       <guid>https://ppmoon.github.io/posts/mysql/mysql-error-1820-hy000-solution/</guid>
-      <description>本解决办法是针对如何错误提示： ERROR 1820 (HY000): You must reset your password using ALTER USER statement before executing this statement. 为了保证安全，mysql会对用户的密码设置使用期限，我们只要让他不过期就可以了</description>
+      <description>&lt;p&gt;本解决办法是针对如何错误提示：&#xA;ERROR 1820 (HY000): You must reset your password using ALTER USER statement before executing this statement.&#xA;为了保证安全，mysql会对用户的密码设置使用期限，我们只要让他不过期就可以了。&#xA;step 1: SET PASSWORD = PASSWORD(‘写你的新密码‘);&#xA;step 2: ALTER USER ‘root‘@‘localhost‘ PASSWORD EXPIRE NEVER;&#xA;step 3: flush privileges;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>windows10安装mysql5.7</title>
       <link>https://ppmoon.github.io/posts/mysql/windows10-install-mysql5-7/</link>
       <pubDate>Wed, 27 Jan 2016 17:30:54 +0800</pubDate>
-      
       <guid>https://ppmoon.github.io/posts/mysql/windows10-install-mysql5-7/</guid>
-      <description>1.首先在mysql的官方网站下载mysql community server 5.7 由于我的win10是64位的所以我选择64zip下载。 http://dev.mysql.com/downloads/mysql/ 不用注册直接点击No thanks,just start my downlload. 2.解</description>
+      <description>&lt;h2 id=&#34;1首先在mysql的官方网站下载mysql-community-server-57&#34;&gt;1.首先在mysql的官方网站下载mysql community server 5.7&lt;/h2&gt;&#xA;&lt;p&gt;由于我的win10是64位的所以我选择64zip下载。&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://dev.mysql.com/downloads/mysql/&#34;&gt;http://dev.mysql.com/downloads/mysql/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://upload-images.jianshu.io/upload_images/677473-eb53d313cb10a643.png&#34; alt=&#34;mysql下载页面&#xA;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;不用注册直接点击No thanks,just start my downlload.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://upload-images.jianshu.io/upload_images/677473-6f62b804ca626676.png&#34; alt=&#34;不用注册&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;2解压文件为bin文件夹添加到环境变量&#34;&gt;2.解压文件为bin文件夹添加到环境变量&lt;/h2&gt;&#xA;&lt;p&gt;这部分很重要不赘述了。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://upload-images.jianshu.io/upload_images/677473-892ca7aef4a4e1e1.png&#34; alt=&#34;添加环境变量&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;3配置mysql配置文件&#34;&gt;3.配置mysql配置文件&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://upload-images.jianshu.io/upload_images/677473-2e7fa21425341d63.png&#34; alt=&#34;mysql配置文件&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;配置mysql程序所在目录和mysql数据存放目录&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>
